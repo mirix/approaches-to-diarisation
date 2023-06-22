@@ -6,7 +6,7 @@ I am new to the field of NLP and struggling with diarisation.
 
 I have tried a number of state-of-the-art approaches. 
 
-While several of them, namely those combining Whisper with Pyannote or Nemo yield satisfactory results when it comes to the quality of the transcription and the aligment, speaker attribution is a different matter all together. 
+While several of them, namely those combining Whisper with Pyannote or Nemo, yield satisfactory results when it comes to the quality of the transcription and the aligment, speaker attribution is a different matter all together. 
 
 Sometimes it works like a charm, sometimes it is a complete disaster. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached script (I am chemist, not a developer, please, keep that in mind).
 
