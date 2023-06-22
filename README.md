@@ -2,7 +2,7 @@
 
 _A testing repo to share code and thoughts on diarisation_
 
-I am new to the field of NLP and am struggling with diarisation.
+I am new to the field of NLP and struggling with diarisation.
 
 I have tried a number of state-of-the-art approaches. 
 
