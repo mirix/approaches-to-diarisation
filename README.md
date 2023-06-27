@@ -24,4 +24,4 @@ It processes 22 samples and store the processed wav files along with the diarise
 
 The script batch_diarize_whisperx.py is the standard Whisper X procedure whereas batch_diarize_fasterwhisper.py is the very first prototype of my procedure.
 
-My procedure produces better results. 
+My procedure (work in progress) yields better results at the time of this writing. 
