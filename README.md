@@ -18,15 +18,10 @@ The quality of speaker attribution depends a lot on the initial sentences chosen
 
 It currently relies on fast_whisper, pyannote and SpeechBrain embeddings. It was tested on Manjaro Linux (Python 3.11.3) with the latest pip versions of all the requirements. The default device is cpu and the version of pythorch is also cpu-only. 
 
-Some samples include the following YouTube videos: Fyb2AiF1feI, qHrN5Mf5sgo, DxxAwDHgQhE. Most procedures out there work well with the first but struggle with the other two. My approach struggles only with the third but still does a better job than others.
-
-The videos can be downloaded and converted in one go with:
-
-`yt-dlp -f bestaudio --extract-audio --audio-format wav --postprocessor-args "-ac 1 -ar 16000" --audio-quality 0 "https://www.youtube.com/watch?v=qHrN5Mf5sgo"`
-
-In the case of DxxAwDHgQhE, however, vocals were first isolated with moises.ai's online tool. Then converted with:
-
-`ffmpeg -i 'When a Frenchman calls an Indian Call Center ： The iRabbit [DxxAwDHgQhE]-vocals-D minor-125bpm-440hz.mp3' -acodec pcm_s16le -ac 1 -ar 16000 -af "silenceremove=start_periods=1:start_duration=1:start_threshold=-60dB:detection=peak,aformat=dblp,areverse,silenceremove=start_periods=1:start_duration=1:start_threshold=-60dB:detection=peak,aformat=dblp,areverse" DxxAwDHgQhE.wav`
-
 If a real developer or NLP enthusiast would be willing to have a lot at this, perhaps we could get to something.
 
+It processes 22 samples and store the processed wav files along with the diarised subtitled in srt format in a folder called "diarisamples". 
+
+The script batch_diarize_whisperx.py is the standard Whisper X procedure whereas batch_diarize_fasterwhisper.py is the very first prototype of my procedure.
+
+My procedure produces better results. 
