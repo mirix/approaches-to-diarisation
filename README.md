@@ -19,6 +19,21 @@ SCRIPT 1: batch_diarize_stablets.py
 
 3. Post-processing of the stable_ts output in order to have more consistent sentence splitting and creation of SRT subtitles in "diarisamples".
 
+Script 1 was tested with Python 3.11.3:
+
+```
+yt-dlp==2023.6.22
+urllib3==2.0.3
+ffmpeg-python==0.2.0
+pydub==0.25.1
+scipy==1.11.0
+numpy==1.24.4
+pandas==2.0.2
+stable-ts==2.6.4
+demucs @ git+https://github.com/facebookresearch/demucs@5d2ccf224f595b8654b0447e06f6adc866cca61a
+```
+Note that, if you clone this repo, you do not need to run Script 1 at all.
+
 
 SCRIPT 2: batch_diarize_hdbscan.py
 
@@ -32,8 +47,26 @@ SCRIPT 2: batch_diarize_hdbscan.py
 
 4. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
 
-5. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saving of the diarised SRT files. Note that even though we are using 3 dimensions for plotting, more are employed for the actual clustering. 
+5. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saving of the diarised SRT files. Note that even though we are using 3 dimensions for plotting, more are employed for the actual clustering.
 
+Script 2 was tested on Python 3.8.16:
+
+```
+umap-learn==0.5.3
+torch==2.0.1
+torchaudio==2.0.2
+scipy==1.10.1
+pydub==0.25.1
+srt==3.5.3
+pandas==1.5.3
+numpy==1.22.4
+hdbscan==0.8.29
+plotly==5.15.0
+pyannote.audio @ git+https://github.com/pyannote/pyannote-audio@11b56a137a578db9335efc00298f6ec1932e6317
+nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
+```
+
+If you use ECAPA-TDNN instead of TitaNet you will not need NeMo and it should work with a more recent Python
 
 My procedure (work in progress) yields better results than anything else I had tried at the time of this writing. Please, feel free to fork and contribute.
 
