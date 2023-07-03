@@ -1,0 +1,332 @@
+1
+00:00:13,080 --> 00:00:13,200
+ Hello.
+
+2
+00:00:13,940 --> 00:00:14,340
+ Good morning.
+
+3
+00:00:14,740 --> 00:00:14,920
+ I'm a...
+
+4
+00:00:14,920 --> 00:00:15,180
+ Hello.
+
+5
+00:00:15,440 --> 00:00:18,340
+ Who's calling, please?
+
+6
+00:00:19,260 --> 00:00:19,980
+ Hello, good morning.
+
+7
+00:00:20,120 --> 00:00:24,100
+ My name is Alexis, and I'm calling you right now from Barrister Global Services.
+
+8
+00:00:25,000 --> 00:00:31,360
+ And the purpose of my call, Mr. David, is to tell you that we are looking for quality field technicians in Colorado Springs.
+
+9
+00:00:32,020 --> 00:00:34,940
+ So I just wanted to ask if you have a moment to answer a few questions.
+
+10
+00:00:35,580 --> 00:00:36,760
+ Sure.
+
+11
+00:00:37,840 --> 00:00:38,120
+ Okay.
+
+12
+00:00:38,460 --> 00:00:48,520
+ Well, just to let you know a little bit about Barrister Global Services, Mr. David, what we are is a multi-vendor company that provides help desk, networking, staffing, and technician services.
+
+13
+00:00:49,200 --> 00:00:51,960
+ So we have clients such as HP.
+
+14
+00:00:52,600 --> 00:01:00,960
+ What they do is they open cases for their customers, and then they send those cases to us, Barrister, so we can supply them a quality technician to do the job.
+
+15
+00:01:01,400 --> 00:01:03,240
+ And I read here that you are a field technician.
+
+16
+00:01:03,460 --> 00:01:03,960
+ Is that correct?
+
+17
+00:01:05,200 --> 00:01:05,560
+ Yes.
+
+18
+00:01:06,900 --> 00:01:07,480
+ Okay, perfect.
+
+19
+00:01:07,800 --> 00:01:22,340
+ Well, so what we're offering you here, Mr. David, is an opportunity to earn or supplement your income with service work that you can accept or decline on a work order by work order basis, meaning you can work on them based on your own schedule and at your own pace.
+
+20
+00:01:22,480 --> 00:01:23,460
+ Are you interested?
+
+21
+00:01:25,120 --> 00:01:27,100
+ I'm not sure what kind of work.
+
+22
+00:01:27,340 --> 00:01:29,760
+ I mean, I understand the work.
+
+23
+00:01:30,660 --> 00:01:34,100
+ I get a lot of work already.
+
+24
+00:01:34,300 --> 00:01:38,260
+ I just don't know if it's, you know, what you guys pay, all that kind of stuff.
+
+25
+00:01:38,620 --> 00:01:39,240
+ Oh, okay.
+
+26
+00:01:39,320 --> 00:01:39,940
+ Because I'm not going to work for a lot of money, you know.
+
+27
+00:01:39,940 --> 00:01:41,540
+ Oh, okay.
+
+28
+00:01:41,800 --> 00:01:45,160
+ Well, let me tell you when on, you know, on how it's going to work.
+
+29
+00:01:45,360 --> 00:01:50,700
+ So, here, Mr. David, once you sign up as one of our technicians, you will be provided with a technician portal.
+
+30
+00:01:51,080 --> 00:01:53,360
+ It's an application that you can install on your phone.
+
+31
+00:01:53,820 --> 00:01:56,020
+ It's installable both on Android and iOS.
+
+32
+00:01:56,500 --> 00:02:02,420
+ And on that application, we will be providing you all the available customers and cases on your area.
+
+33
+00:02:02,620 --> 00:02:06,640
+ So in this case, you can pick and choose which customers and cases you would like to work for.
+
+34
+00:02:07,120 --> 00:02:09,920
+ And also, it is not mandatory for you to accept all these cases.
+
+35
+00:02:09,940 --> 00:02:12,820
+ You can work on them based on your own schedule.
+
+36
+00:02:13,580 --> 00:02:20,760
+ And so, your payment is very easy because once you close out the service order or the work order, the payment will reflect right away.
+
+37
+00:02:21,420 --> 00:02:24,500
+ And also, our minimum pay that we have right now is $50.
+
+38
+00:02:25,240 --> 00:02:25,980
+ That's per hour.
+
+39
+00:02:26,180 --> 00:02:30,180
+ So it really depends on which service that you provide.
+
+40
+00:02:30,260 --> 00:02:32,920
+ So it can go higher than that, depending on your skill set.
+
+41
+00:02:32,920 --> 00:02:33,560
+ I see.
+
+42
+00:02:35,180 --> 00:02:35,460
+ Okay.
+
+43
+00:02:37,020 --> 00:02:37,640
+ So are you interested?
+
+44
+00:02:38,220 --> 00:02:39,560
+ Possibly.
+
+45
+00:02:39,720 --> 00:02:42,840
+ Do I have to pay anything to join up with this program or what?
+
+46
+00:02:43,860 --> 00:02:46,120
+ You do not have to pay for anything, Mr. David.
+
+47
+00:02:46,260 --> 00:02:48,620
+ Well, if you're interested, I just need to ask you a few questions.
+
+48
+00:02:49,320 --> 00:02:52,480
+ Just wanted to know if you have at least one year of experience in the field.
+
+49
+00:02:54,300 --> 00:02:56,000
+ Yes, I have many years of experience.
+
+50
+00:02:56,100 --> 00:02:56,780
+ Oh, okay.
+
+51
+00:02:56,800 --> 00:02:57,340
+ That's perfect.
+
+52
+00:02:57,860 --> 00:02:59,860
+ And are you a citizen of the U.S.
+
+53
+00:03:00,000 --> 00:03:00,900
+ or by law be permitted to work?
+
+54
+00:03:00,900 --> 00:03:03,100
+ Yes.
+
+55
+00:03:04,020 --> 00:03:04,400
+ Okay, perfect.
+
+56
+00:03:04,600 --> 00:03:08,760
+ And are you able to provide a current government secured ID or a driver's license?
+
+57
+00:03:10,100 --> 00:03:10,460
+ Yes.
+
+58
+00:03:11,120 --> 00:03:11,740
+ Okay, perfect.
+
+59
+00:03:12,400 --> 00:03:19,540
+ So do you have time right now, Mr. David, to set up your profile so I can walk you through the following steps?
+
+60
+00:03:19,740 --> 00:03:21,500
+ Or would you like me to send it to you through email?
+
+61
+00:03:23,220 --> 00:03:25,800
+ Send me something through email so I can look at it because I got to go.
+
+62
+00:03:25,920 --> 00:03:28,600
+ I'm heading out to go to work and stuff.
+
+63
+00:03:29,080 --> 00:03:29,800
+ That's okay.
+
+64
+00:03:29,800 --> 00:03:33,780
+ So, Mr. David, I have your email address here.
+
+65
+00:03:33,900 --> 00:03:35,740
+ Just verify if it's the correct one.
+
+66
+00:03:35,900 --> 00:03:39,180
+ I have home underscore user at Comcast.net.
+
+67
+00:03:39,320 --> 00:03:39,920
+ Is that correct?
+
+68
+00:03:40,540 --> 00:03:42,660
+ No, that's an old one.
+
+69
+00:03:42,920 --> 00:03:42,920
+ No.
+
+70
+00:03:44,100 --> 00:03:50,320
+ My new email, I've had years, is the.omnizoa at gmail.
+
+71
+00:03:50,680 --> 00:03:57,680
+ T-H-E dot O-M-N-I-Z-O-A at gmail.com.
+
+72
+00:03:58,920 --> 00:04:01,040
+ Okay, got that, Mr. David.
+
+73
+00:04:01,140 --> 00:04:04,140
+ I'll be sending an email under my name, which is Alexis Stewart.
+
+74
+00:04:04,960 --> 00:04:10,320
+ And yeah, is it okay with you if I give you a call back maybe after working hours just to check if you were able to receive my email?
+
+75
+00:04:11,600 --> 00:04:11,980
+ Sure.
+
+76
+00:04:12,540 --> 00:04:12,840
+ Okay.
+
+77
+00:04:13,140 --> 00:04:13,380
+ All right.
+
+78
+00:04:13,420 --> 00:04:14,460
+ Thank you so much, Mr. David.
+
+79
+00:04:14,600 --> 00:04:15,520
+ This is Alexis again.
+
+80
+00:04:15,700 --> 00:04:17,560
+ Have a great day on your work and keep safe, okay?
+
+81
+00:04:18,820 --> 00:04:19,140
+ You too.
+
+82
+00:04:19,380 --> 00:04:19,520
+ Bye.
+
+83
+00:04:19,620 --> 00:04:20,300
+ Okay, bye.
+

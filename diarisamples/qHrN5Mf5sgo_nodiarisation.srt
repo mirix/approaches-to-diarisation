@@ -1,0 +1,340 @@
+1
+00:00:01,700 --> 00:00:02,600
+ Here's what's going to happen.
+
+2
+00:00:02,740 --> 00:00:04,640
+ I am going to have to fix you.
+
+3
+00:00:04,980 --> 00:00:11,920
+ Manage you to, on a more personal scale, a more micro form of management.
+
+4
+00:00:12,180 --> 00:00:12,920
+ Jim, what is that called?
+
+5
+00:00:13,160 --> 00:00:13,680
+ Micro-Jimmin?
+
+6
+00:00:14,060 --> 00:00:14,300
+ Boom.
+
+7
+00:00:14,520 --> 00:00:14,700
+ Yes.
+
+8
+00:00:15,100 --> 00:00:16,740
+ Now Jim is going to be the client.
+
+9
+00:00:17,300 --> 00:00:22,440
+ Dwight, you're going to have to sell to him without being aggressive, hostile, or difficult.
+
+10
+00:00:23,300 --> 00:00:23,640
+ Let's go.
+
+11
+00:00:23,960 --> 00:00:24,440
+ All right, fine.
+
+12
+00:00:24,780 --> 00:00:25,020
+ Ahem.
+
+13
+00:00:26,380 --> 00:00:26,700
+ Ring.
+
+14
+00:00:27,140 --> 00:00:27,360
+ Ring.
+
+15
+00:00:27,360 --> 00:00:28,720
+ Hello?
+
+16
+00:00:29,240 --> 00:00:31,640
+ Hello, this is Dwight Schrute from the Dunder Mifflin Paper Company.
+
+17
+00:00:32,100 --> 00:00:33,320
+ Wow, that's great, because I need paper.
+
+18
+00:00:34,000 --> 00:00:38,460
+ Excellent, then you are in luck, because we are having a limited time offer only on everything.
+
+19
+00:00:38,820 --> 00:00:40,000
+ Wow, this is my lucky day.
+
+20
+00:00:40,040 --> 00:00:41,840
+ What is your name, sir?
+
+21
+00:00:42,240 --> 00:00:43,140
+ I am Bill Butlicker.
+
+22
+00:00:45,040 --> 00:00:45,940
+ Really, that's your real name?
+
+23
+00:00:46,720 --> 00:00:47,740
+ How dare you?
+
+24
+00:00:48,780 --> 00:00:50,820
+ My family built this country, by the way.
+
+25
+00:00:50,880 --> 00:00:52,140
+ Be respectful, Dwight, please.
+
+26
+00:00:52,280 --> 00:00:52,800
+ Yes, Michael.
+
+27
+00:00:52,940 --> 00:00:53,560
+ Could you hold on one second?
+
+28
+00:00:53,620 --> 00:00:54,220
+ That's my other line.
+
+29
+00:00:54,520 --> 00:00:54,720
+ What?
+
+30
+00:00:54,960 --> 00:00:55,540
+ No, but I...
+
+31
+00:00:55,860 --> 00:00:56,040
+ Hello?
+
+32
+00:00:57,120 --> 00:01:00,640
+ No, I'm just on the phone with this stupid salesman.
+
+33
+00:01:00,940 --> 00:01:01,720
+ He's so dumb.
+
+34
+00:01:02,700 --> 00:01:05,340
+ Probably just going to keep him on the line forever and not buy anything.
+
+35
+00:01:07,080 --> 00:01:08,900
+ Okay, it's up to you to change his mind.
+
+36
+00:01:09,540 --> 00:01:11,840
+ Sorry, that was a family emergency.
+
+37
+00:01:12,180 --> 00:01:13,180
+ Oh no, what's wrong?
+
+38
+00:01:13,340 --> 00:01:13,780
+ You know what?
+
+39
+00:01:13,880 --> 00:01:14,480
+ That's private.
+
+40
+00:01:15,140 --> 00:01:16,500
+ Boundaries, Dwight, come on.
+
+41
+00:01:16,580 --> 00:01:17,840
+ I'm sorry, Mr. Butlicker.
+
+42
+00:01:18,000 --> 00:01:20,080
+ As I was saying, we are having a limited...
+
+43
+00:01:20,080 --> 00:01:21,080
+ You have to speak up a little bit louder.
+
+44
+00:01:21,180 --> 00:01:21,560
+ I'm hard of hearing.
+
+45
+00:01:21,900 --> 00:01:22,340
+ He's hard of hearing.
+
+46
+00:01:22,340 --> 00:01:22,880
+ He's an old man.
+
+47
+00:01:22,920 --> 00:01:23,320
+ Let's go.
+
+48
+00:01:23,440 --> 00:01:25,220
+ As I was saying, right now we are having...
+
+49
+00:01:25,220 --> 00:01:25,760
+ Yeah, talk louder.
+
+50
+00:01:26,060 --> 00:01:27,780
+ Okay, our prices have never been lower.
+
+51
+00:01:27,800 --> 00:01:28,860
+ Son, you have to talk louder.
+
+52
+00:01:28,900 --> 00:01:29,900
+ Never been lower.
+
+53
+00:01:30,000 --> 00:01:30,900
+ Louder, son!
+
+54
+00:01:31,020 --> 00:01:33,740
+ Butlicker, our prices have never been lower!
+
+55
+00:01:33,800 --> 00:01:33,960
+ Stop it.
+
+56
+00:01:34,300 --> 00:01:37,700
+ That is totally inappropriate.
+
+57
+00:01:38,680 --> 00:01:39,940
+ You should never yell at the client.
+
+58
+00:01:40,100 --> 00:01:41,540
+ Now, you listen to me, sir.
+
+59
+00:01:41,840 --> 00:01:42,300
+ Here we go.
+
+60
+00:01:42,700 --> 00:01:47,980
+ The three words I would describe you as is aggressive, hostile, and definitely difficult.
+
+61
+00:01:48,000 --> 00:01:48,560
+ Give me the phone.
+
+62
+00:01:48,740 --> 00:01:49,920
+ I'm irate right now.
+
+63
+00:01:49,920 --> 00:01:51,860
+ Give me the phone.
+
+64
+00:01:51,860 --> 00:01:52,420
+ Mr. Butlicker.
+
+65
+00:01:52,600 --> 00:01:53,000
+ Give me the phone.
+
+66
+00:01:53,180 --> 00:01:54,460
+ I have to put you on with my boss.
+
+67
+00:01:54,540 --> 00:01:55,300
+ Well, I should hope so.
+
+68
+00:01:55,960 --> 00:01:56,420
+ Who is this?
+
+69
+00:01:56,520 --> 00:01:58,680
+ Hello, this is Michael Scott, regional manager.
+
+70
+00:01:58,980 --> 00:02:00,200
+ Well, this is William M.
+
+71
+00:02:00,400 --> 00:02:00,540
+ Butlicker.
+
+72
+00:02:01,220 --> 00:02:02,140
+ Hello, Mr. Butlicker.
+
+73
+00:02:02,220 --> 00:02:03,100
+ How may we help you?
+
+74
+00:02:04,060 --> 00:02:05,380
+ Michael, I like the sound of your voice.
+
+75
+00:02:05,600 --> 00:02:06,200
+ You know what I'm going to do?
+
+76
+00:02:06,580 --> 00:02:08,920
+ I'm going to buy one million dollars' worth of paper products today.
+
+77
+00:02:10,620 --> 00:02:11,860
+ See, that's done.
+
+78
+00:02:12,060 --> 00:02:13,540
+ Thank you very much, sir.
+
+79
+00:02:13,860 --> 00:02:15,160
+ I don't think you'll regret it.
+
+80
+00:02:15,680 --> 00:02:16,380
+ You're the master.
+
+81
+00:02:16,520 --> 00:02:17,580
+ There is one condition, Michael.
+
+82
+00:02:17,740 --> 00:02:18,020
+ Yes?
+
+83
+00:02:18,140 --> 00:02:20,460
+ You have to fire the salesman that treated me so terribly.
+
+84
+00:02:20,460 --> 00:02:21,320
+ Don't do it, Michael.
+
+85
+00:02:22,300 --> 00:02:24,360
+ It's a million-dollar sale.
+

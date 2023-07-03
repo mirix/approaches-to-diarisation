@@ -1,0 +1,76 @@
+1
+00:00:01,180 --> 00:00:01,720
+[SPEAKER 1]: Hello, this is Amos.
+
+2
+00:00:04,920 --> 00:00:05,740
+[SPEAKER 2]: Yeah, hi, good day.
+
+3
+00:00:05,820 --> 00:00:07,220
+[SPEAKER 2]: This is Amy from AHP.
+
+4
+00:00:07,340 --> 00:00:15,580
+[SPEAKER 2]: So I just want to confirm the appointment for the ticket number W-O-0-1-6-6-7-6-8-7-6.
+
+5
+00:00:19,120 --> 00:00:26,100
+[SPEAKER 2]: This one's for the system board and hard drive, also for RAM replacement.
+
+6
+00:00:27,220 --> 00:00:27,460
+[SPEAKER 1]: OK.
+
+7
+00:00:28,460 --> 00:00:34,620
+[SPEAKER 2]: Yes, I just want to confirm, yes, if this one, yes, appointment for today or tomorrow.
+
+8
+00:00:37,360 --> 00:00:40,860
+[SPEAKER 1]: This is the first call I've received about an appointment for this, so I don't know.
+
+9
+00:00:41,680 --> 00:00:42,500
+[SPEAKER 2]: Oh, I see.
+
+10
+00:00:42,640 --> 00:00:45,860
+[SPEAKER 2]: Yes, because we already assigned a technician to do this appointment.
+
+11
+00:00:46,740 --> 00:00:46,960
+[SPEAKER 1]: OK.
+
+12
+00:00:47,200 --> 00:00:53,800
+[SPEAKER 2]: But, yes, he just wants to clear if you're available tomorrow at 10 a.m.
+
+13
+00:00:54,380 --> 00:00:55,660
+[SPEAKER 1]: Yes, yes, I am.
+
+14
+00:00:55,660 --> 00:00:57,300
+[SPEAKER 2]: Oh, OK, great.
+
+15
+00:00:57,480 --> 00:00:59,580
+[SPEAKER 2]: So thank you so much for letting us know, Amos.
+
+16
+00:00:59,680 --> 00:01:04,160
+[SPEAKER 2]: So we'll just call you back tomorrow to have some updates about this one.
+
+17
+00:01:05,440 --> 00:01:05,740
+[SPEAKER 1]: OK.
+
+18
+00:01:06,840 --> 00:01:07,440
+[SPEAKER 2]: All right, bye.
+
+19
+00:01:08,340 --> 00:01:08,460
+[SPEAKER 1]: Bye.
+

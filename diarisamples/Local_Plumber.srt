@@ -1,0 +1,100 @@
+1
+00:00:00,140 --> 00:00:01,420
+[SPEAKER 1]: Call is now being recorded.
+
+2
+00:00:02,880 --> 00:00:05,560
+[SPEAKER 2]: ABC Plumbing and Heating, this is Betty.
+
+3
+00:00:06,820 --> 00:00:08,780
+[SPEAKER 1]: Hi Betty, I'm having a problem with my sewer drain.
+
+4
+00:00:09,880 --> 00:00:11,380
+[SPEAKER 2]: Oh, I'm so sorry to hear that, sir.
+
+5
+00:00:11,460 --> 00:00:13,320
+[SPEAKER 2]: Would you like me to get a hold of the plumber for you?
+
+6
+00:00:14,220 --> 00:00:15,580
+[SPEAKER 1]: Do you know how much it's going to cost?
+
+7
+00:00:16,760 --> 00:00:21,960
+[SPEAKER 2]: Unfortunately, I wouldn't be able to quote prices, but I can get a hold of someone who would be able to give you a better idea.
+
+8
+00:00:23,100 --> 00:00:24,960
+[SPEAKER 1]: I'm getting a backup throughout the entire house.
+
+9
+00:00:25,920 --> 00:00:27,280
+[SPEAKER 2]: Are you a client of ABC?
+
+10
+00:00:27,340 --> 00:00:33,000
+[SPEAKER 1]: I did use them before to put in my garbage disposal, but nothing major like this.
+
+11
+00:00:33,280 --> 00:00:36,900
+[SPEAKER 2]: Okay, let me get your name and number and I can patch you right through to the plumber.
+
+12
+00:00:37,540 --> 00:00:38,800
+[SPEAKER 2]: Your name, sir?
+
+13
+00:00:38,780 --> 00:00:40,000
+[SPEAKER 1]: Mike Barry.
+
+14
+00:00:41,440 --> 00:00:42,960
+[SPEAKER 2]: Would you spell your last name for me, please?
+
+15
+00:00:43,660 --> 00:00:45,180
+[SPEAKER 1]: That's B-A-R-R-Y.
+
+16
+00:00:46,180 --> 00:00:48,200
+[SPEAKER 2]: Okay, and your callback number?
+
+17
+00:00:49,420 --> 00:00:52,200
+[SPEAKER 1]: 610-265-1714.
+
+18
+00:00:52,200 --> 00:00:57,300
+[SPEAKER 2]: Okay, that's 610-265-1714.
+
+19
+00:00:57,960 --> 00:00:59,620
+[SPEAKER 1]: Yes, will he call me right back?
+
+20
+00:01:00,360 --> 00:01:04,560
+[SPEAKER 2]: Actually, Mr. Barry, I'm going to call him right now and patch you directly through to the plumber.
+
+21
+00:01:05,160 --> 00:01:06,400
+[SPEAKER 2]: Would you stay on the line for a moment?
+
+22
+00:01:07,200 --> 00:01:07,600
+[SPEAKER 1]: Oh, sure.
+
+23
+00:01:07,700 --> 00:01:07,840
+[SPEAKER 1]: Awesome.
+
+24
+00:01:08,400 --> 00:01:08,400
+[SPEAKER 1]: Thank you.
+
+25
+00:01:08,940 --> 00:01:09,800
+[SPEAKER 2]: Okay, hold on.
+

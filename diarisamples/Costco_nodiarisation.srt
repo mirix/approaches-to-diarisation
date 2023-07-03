@@ -1,0 +1,24 @@
+1
+00:00:00,600 --> 00:00:02,160
+ Hi, this is Helen Mews.
+
+2
+00:00:02,320 --> 00:00:04,880
+ I'm the Assistant Warehouse Manager for Costco Halifax.
+
+3
+00:00:05,480 --> 00:00:12,360
+ I would like to thank you for joining the Costco Wholesale and invite you to stop in soon and pick up your Winter Savings Coupon Book.
+
+4
+00:00:12,900 --> 00:00:18,360
+ It contains over $7,500 in special coupons so you can start saving today.
+
+5
+00:00:18,780 --> 00:00:19,620
+ Thanks for your time.
+
+6
+00:00:19,960 --> 00:00:20,660
+ See you in the warehouse.
+

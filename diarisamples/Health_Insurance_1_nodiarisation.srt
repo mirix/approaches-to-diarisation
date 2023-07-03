@@ -1,0 +1,156 @@
+1
+00:00:11,700 --> 00:00:11,820
+ Hello?
+
+2
+00:00:12,540 --> 00:00:13,200
+ Hi, good morning.
+
+3
+00:00:13,420 --> 00:00:14,840
+ I'm looking for Charles Clow.
+
+4
+00:00:16,100 --> 00:00:17,140
+ Yeah, this is Charles.
+
+5
+00:00:17,660 --> 00:00:18,240
+ Alright, thank you.
+
+6
+00:00:18,600 --> 00:00:21,280
+ So, anyway, Charles, this is Billy from Medicare Ally.
+
+7
+00:00:22,020 --> 00:00:26,080
+ And I'm just calling you regarding some recent changes made on most medical plans.
+
+8
+00:00:26,980 --> 00:00:30,640
+ And this year it brings new health plans and drug coverage options.
+
+9
+00:00:31,280 --> 00:00:40,580
+ And you are eligible to lower down your medication costs and you can get your own dental, vision, and hearing coverage in a $0 premium or at no cost to you.
+
+10
+00:00:41,320 --> 00:00:46,360
+ So, I just want to know, Mr. Clow, does your Medicare Parts A and B are currently active this year?
+
+11
+00:00:47,840 --> 00:00:48,020
+ Yeah.
+
+12
+00:00:48,900 --> 00:00:49,460
+ Okay, great.
+
+13
+00:00:49,620 --> 00:00:56,820
+ So, aside from Medicare, do you also have your own private advantage plan like from Humana or Blue Cross Blue Shield, AARP?
+
+14
+00:00:59,120 --> 00:00:59,940
+ Humana, okay.
+
+15
+00:01:00,540 --> 00:01:05,200
+ And also, are you getting some co-pays, deductibles, or even a co-insurance from Humana?
+
+16
+00:01:06,940 --> 00:01:11,000
+ So, how much are you currently spending, sir, with Humana?
+
+17
+00:01:11,000 --> 00:01:12,020
+ I'm on about $3.
+
+18
+00:01:12,480 --> 00:01:14,420
+ $3 only on the medications.
+
+19
+00:01:14,840 --> 00:01:16,140
+ They pay for everything else.
+
+20
+00:01:17,060 --> 00:01:17,780
+ For the medication.
+
+21
+00:01:18,120 --> 00:01:19,040
+ That is $3.
+
+22
+00:01:19,500 --> 00:01:19,720
+ Okay.
+
+23
+00:01:20,400 --> 00:01:39,200
+ Alright, so now to make sure that you are receiving these upgraded benefits and you can save more money on your medical plan together with Humana, I will have one of our licensed Medicare advisors on the other line to discuss to you some policy breakdown review so that you'll be informed and up to date on your Medicare benefits and coverage.
+
+24
+00:01:39,840 --> 00:01:55,200
+ And also, just to make sure that you are aware of the new changes with supplemental benefits that have taken place, which can provide you those premium benefits, cost saving plans, lower monthly premiums, and also for the reduction on your Medicare Part B deductibles.
+
+25
+00:01:55,940 --> 00:01:56,180
+ Okay?
+
+26
+00:01:56,180 --> 00:01:59,720
+ So, Mr. Low, I'll also be needing your date of birth.
+
+27
+00:02:00,000 --> 00:02:00,960
+ So, when is your birthday?
+
+28
+00:02:03,180 --> 00:02:05,740
+ 7-13-56.
+
+29
+00:02:06,580 --> 00:02:06,840
+ 30?
+
+30
+00:02:07,660 --> 00:02:08,900
+ Okay, thank you.
+
+31
+00:02:08,960 --> 00:02:10,740
+ 7-13-8.
+
+32
+00:02:11,740 --> 00:02:12,660
+ Okay, 13.
+
+33
+00:02:12,680 --> 00:02:13,420
+ 9-15-6.
+
+34
+00:02:13,820 --> 00:02:14,760
+ Alright, thank you so much.
+
+35
+00:02:15,160 --> 00:02:20,140
+ So, Mr. Low, I want you to stay on the line and then I will connect you over now to one of our licensed Medicare experts.
+
+36
+00:02:20,280 --> 00:02:20,460
+ Okay?
+
+37
+00:02:21,220 --> 00:02:21,660
+ Alright.
+
+38
+00:02:21,960 --> 00:02:22,500
+ Alright, thank you.
+
+39
+00:02:26,180 --> 00:02:26,460
+ Thank you.
+

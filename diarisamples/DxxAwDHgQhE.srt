@@ -1,0 +1,300 @@
+1
+00:00:00,000 --> 00:00:17,420
+[SPEAKER 0]: Please say hello to start.
+
+2
+00:00:17,520 --> 00:00:17,720
+[SPEAKER 1]: Hello.
+
+3
+00:00:19,200 --> 00:00:20,900
+[SPEAKER 0]: I didn't understand your response.
+
+4
+00:00:21,540 --> 00:00:21,760
+[SPEAKER 1]: Hello.
+
+5
+00:00:22,680 --> 00:00:24,780
+[SPEAKER 0]: Please say hello to start.
+
+6
+00:00:25,280 --> 00:00:25,660
+[SPEAKER 1]: Hello.
+
+7
+00:00:26,160 --> 00:00:26,940
+[SPEAKER 0]: I'm sorry, sir.
+
+8
+00:00:27,240 --> 00:00:28,360
+[SPEAKER 0]: I can't understand you.
+
+9
+00:00:28,360 --> 00:00:30,240
+[SPEAKER 0]: Could you please repeat your response?
+
+10
+00:00:31,640 --> 00:00:31,860
+[SPEAKER 1]: Hello.
+
+11
+00:00:32,540 --> 00:00:34,480
+[SPEAKER 0]: I'm still waiting for your response.
+
+12
+00:00:34,900 --> 00:00:36,780
+[SPEAKER 0]: Please say hello to start.
+
+13
+00:00:36,920 --> 00:00:37,160
+[SPEAKER 1]: Hello.
+
+14
+00:00:37,720 --> 00:00:38,200
+[SPEAKER 1]: Hello.
+
+15
+00:00:38,760 --> 00:00:39,100
+[SPEAKER 1]: Hello.
+
+16
+00:00:42,600 --> 00:00:45,540
+[SPEAKER 0]: Calling iRabbit International Help Desk for assistance.
+
+17
+00:00:46,680 --> 00:00:47,800
+[SPEAKER 2]: Hello, sir.
+
+18
+00:00:48,200 --> 00:00:52,340
+[SPEAKER 2]: Thank you for purchasing the iRabbit, your own personal digital animal.
+
+19
+00:00:52,340 --> 00:01:10,400
+[SPEAKER 2]: T H I O Is that an O, sir?
+
+20
+00:01:10,300 --> 00:01:10,520
+[SPEAKER 1]: Yes.
+
+21
+00:01:11,400 --> 00:01:16,160
+[SPEAKER 1]: O R One more R.
+
+22
+00:01:16,540 --> 00:01:19,500
+[SPEAKER 2]: Y That is not a letter, sir.
+
+23
+00:01:20,980 --> 00:01:22,280
+[SPEAKER 1]: It's the letter Y.
+
+24
+00:01:30,540 --> 00:01:33,000
+[SPEAKER 2]: Can I just call you Greg, sir?
+
+25
+00:01:33,860 --> 00:01:34,460
+[SPEAKER 1]: I'm Thierry.
+
+26
+00:01:35,260 --> 00:01:35,880
+[SPEAKER 1]: Thierry.
+
+27
+00:01:38,640 --> 00:01:39,820
+[SPEAKER 2]: Bien sûr, monsieur.
+
+28
+00:01:40,880 --> 00:01:42,640
+[SPEAKER 2]: How can I help you today, Mr. Greg?
+
+29
+00:01:43,880 --> 00:01:45,360
+[SPEAKER 1]: I tried to start my iRabbit.
+
+30
+00:01:45,420 --> 00:01:46,340
+[SPEAKER 1]: It doesn't work.
+
+31
+00:01:46,760 --> 00:01:48,840
+[SPEAKER 1]: I'm very tired and hungry.
+
+32
+00:01:49,220 --> 00:01:51,240
+[SPEAKER 2]: Sir, if you're hungry, I can call you back after lunch.
+
+33
+00:01:51,440 --> 00:01:52,600
+[SPEAKER 1]: No, wait.
+
+34
+00:01:52,380 --> 00:01:53,200
+[SPEAKER 1]: I shake the rabbit.
+
+35
+00:01:53,540 --> 00:01:54,380
+[SPEAKER 1]: It doesn't function.
+
+36
+00:01:54,760 --> 00:01:56,560
+[SPEAKER 2]: Sir, please do not shake your iRabbit.
+
+37
+00:01:56,900 --> 00:01:58,180
+[SPEAKER 2]: Press the tail to start.
+
+38
+00:01:59,000 --> 00:01:59,580
+[SPEAKER 1]: I tried.
+
+39
+00:02:00,400 --> 00:02:00,600
+[SPEAKER 1]: I tried.
+
+40
+00:02:00,940 --> 00:02:01,640
+[SPEAKER 1]: It never works.
+
+41
+00:02:02,400 --> 00:02:02,840
+[SPEAKER 1]: I hate the rabbit.
+
+42
+00:02:03,200 --> 00:02:06,980
+[SPEAKER 2]: Sir, your one-year limited guarantee doesn't cover chewing or biting the device.
+
+43
+00:02:07,360 --> 00:02:08,880
+[SPEAKER 1]: No, I hate the rabbit.
+
+44
+00:02:09,460 --> 00:02:11,100
+[SPEAKER 2]: Kitting can cause fire in your house, sir.
+
+45
+00:02:11,320 --> 00:02:12,420
+[SPEAKER 1]: No, I hate the rabbit.
+
+46
+00:02:12,760 --> 00:02:14,600
+[SPEAKER 2]: I understand that you are a non-vegetarian, Mr. Greg.
+
+47
+00:02:14,900 --> 00:02:18,220
+[SPEAKER 2]: But I would personally advise you to not eat the equipment, sir.
+
+48
+00:02:19,560 --> 00:02:21,400
+[SPEAKER 1]: Can I talk to your chef, please?
+
+49
+00:02:21,340 --> 00:02:23,820
+[SPEAKER 2]: I'm calling from iRabbit International Help Desk.
+
+50
+00:02:24,800 --> 00:02:25,440
+[SPEAKER 2]: It's not a restaurant, sir.
+
+51
+00:02:25,760 --> 00:02:26,280
+[SPEAKER 1]: No restaurant.
+
+52
+00:02:26,800 --> 00:02:30,400
+[SPEAKER 1]: I would like to talk to your chief.
+
+53
+00:02:30,580 --> 00:02:32,640
+[SPEAKER 2]: We are based in a developed country here.
+
+54
+00:02:33,800 --> 00:02:34,860
+[SPEAKER 2]: We don't have any chiefs or tribes now.
+
+55
+00:02:35,180 --> 00:02:36,440
+[SPEAKER 1]: But I paid a lot of money.
+
+56
+00:02:36,780 --> 00:02:37,440
+[SPEAKER 1]: It is not cheap.
+
+57
+00:02:37,820 --> 00:02:38,500
+[SPEAKER 2]: Exactly, sir.
+
+58
+00:02:38,500 --> 00:02:40,000
+[SPEAKER 2]: It's a rabbit, not a sheep.
+
+59
+00:02:40,700 --> 00:02:42,100
+[SPEAKER 1]: I mean it is not cheap.
+
+60
+00:02:42,340 --> 00:02:44,120
+[SPEAKER 2]: It's a rabbit, not a sheep.
+
+61
+00:02:45,840 --> 00:02:46,720
+[SPEAKER 1]: It's not cheap.
+
+62
+00:02:46,820 --> 00:02:48,600
+[SPEAKER 2]: It does have an electronic chip inside.
+
+63
+00:02:49,240 --> 00:02:52,120
+[SPEAKER 1]: Please, focus on my problem.
+
+64
+00:02:52,700 --> 00:02:54,400
+[SPEAKER 2]: I don't quite understand you, sir.
+
+65
+00:02:54,600 --> 00:02:54,640
+[SPEAKER 1]: Please focus.
+
+66
+00:02:55,400 --> 00:02:55,740
+[SPEAKER 2]: I beg your pardon?
+
+67
+00:02:56,280 --> 00:02:58,520
+[SPEAKER 1]: Please focus on the rabbit.
+
+68
+00:02:59,980 --> 00:03:00,680
+[SPEAKER 2]: I'm sorry, sir.
+
+69
+00:03:00,800 --> 00:03:02,660
+[SPEAKER 2]: I can't accept that kind of language.
+
+70
+00:03:03,400 --> 00:03:06,260
+[SPEAKER 2]: Thank you for purchasing the iRabbit, your personal digital animal.
+
+71
+00:03:25,560 --> 00:03:25,920
+[SPEAKER 1]: Hello.
+
+72
+00:03:27,480 --> 00:03:28,560
+[SPEAKER 0]: Welcome, Greg.
+
+73
+00:03:30,000 --> 00:03:32,200
+[SPEAKER 1]: The name is Thierry.
+
+74
+00:03:32,940 --> 00:03:34,980
+[SPEAKER 0]: Nice to meet you, Thierry.
+
+75
+00:03:35,840 --> 00:03:38,200
+[SPEAKER 0]: What can I do for you, Thierry?
+

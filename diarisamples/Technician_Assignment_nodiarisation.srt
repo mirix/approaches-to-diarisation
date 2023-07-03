@@ -1,0 +1,132 @@
+1
+00:00:00,820 --> 00:00:03,780
+ Hello, is this Jess?
+
+2
+00:00:04,320 --> 00:00:04,680
+ Yes, it's yours.
+
+3
+00:00:05,620 --> 00:00:07,540
+ Hi, this is Stella from Barrister.
+
+4
+00:00:08,380 --> 00:00:16,380
+ I'm calling because I have an open ticket for you in 100 East Tyler Street, Tampa, Florida.
+
+5
+00:00:17,200 --> 00:00:20,580
+ The zip code is 33606.
+
+6
+00:00:21,140 --> 00:00:25,920
+ And this is for Santa Air Direct Unit to complete installation.
+
+7
+00:00:26,700 --> 00:00:28,400
+ Are you available for this work order?
+
+8
+00:00:30,000 --> 00:00:32,760
+ I'm not in Tampa right now.
+
+9
+00:00:32,820 --> 00:00:33,360
+ I live in Orlando.
+
+10
+00:00:33,600 --> 00:00:35,180
+ You said it's an open ticket?
+
+11
+00:00:35,380 --> 00:00:37,220
+ Like it's on my log or something?
+
+12
+00:00:39,060 --> 00:00:41,300
+ This is a work order for you.
+
+13
+00:00:41,900 --> 00:00:46,620
+ The work request number is 4744244.
+
+14
+00:00:46,780 --> 00:00:48,560
+ But what I was saying is, is this like a new order or no?
+
+15
+00:00:48,600 --> 00:00:49,300
+ Is this a new ticket?
+
+16
+00:00:50,720 --> 00:00:50,940
+ Sorry?
+
+17
+00:00:52,220 --> 00:00:52,900
+ Is this a new ticket?
+
+18
+00:00:53,500 --> 00:00:54,040
+ Yes, sir.
+
+19
+00:00:54,040 --> 00:00:55,800
+ Oh, okay, that's what I'm saying.
+
+20
+00:00:55,980 --> 00:00:56,820
+ I don't live in Tampa.
+
+21
+00:00:57,000 --> 00:01:00,460
+ It's kind of out of my way that I wouldn't be able to cover that this week or anything.
+
+22
+00:01:01,140 --> 00:01:02,540
+ Okay, how about this?
+
+23
+00:01:02,740 --> 00:01:10,120
+ Another ticket that I have here in 5281 Airport Service Road, Tampa, Florida.
+
+24
+00:01:10,800 --> 00:01:13,860
+ The zip code is 33607.
+
+25
+00:01:14,440 --> 00:01:16,020
+ And this is for miscellaneous services?
+
+26
+00:01:16,020 --> 00:01:21,920
+ Yeah, like right now, like this week, I live in Orlando, so I'm not anywhere near Tampa.
+
+27
+00:01:22,420 --> 00:01:26,340
+ I'm like two and a half hours away from Tampa, so I couldn't cover anything over there this week.
+
+28
+00:01:27,000 --> 00:01:27,720
+ All right, okay.
+
+29
+00:01:28,320 --> 00:01:30,700
+ So thank you so much for taking this call.
+
+30
+00:01:30,840 --> 00:01:31,480
+ Have a great day.
+
+31
+00:01:32,020 --> 00:01:32,420
+ Hey, you too.
+
+32
+00:01:32,460 --> 00:01:32,700
+ Thank you.
+
+33
+00:01:33,140 --> 00:01:33,420
+ All right.
+
