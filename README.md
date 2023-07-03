@@ -49,7 +49,7 @@ SCRIPT 2: batch_diarize_hdbscan.py
 
 4. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
 
-5. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and save the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
+5. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
 
 Script 2 was tested on Python 3.8.16:
 
