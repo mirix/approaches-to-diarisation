@@ -8,6 +8,8 @@ While several of them, namely those combining Whisper with Pyannote or NeMo, yie
 
 Sometimes it works like a charm, sometimes it is a complete disaster, or anything in between. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached scripts (when going through my code keep in mind that I am chemist, not a developer).
 
+Note that these are just code snippets and not an installable module or library.
+
 
 SCRIPT 1: batch_diarize_stablets.py
 
@@ -66,7 +68,7 @@ pyannote.audio @ git+https://github.com/pyannote/pyannote-audio@11b56a137a578db9
 nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
 ```
 
-If you use ECAPA-TDNN instead of TitaNet you will not need NeMo and it should work with a more recent Python
+If you use ECAPA-TDNN instead of TitaNet, you will not need NeMo and the script should work with a more recent Python
 
 My procedure (work in progress) yields better results than anything else I had tried at the time of this writing. Please, feel free to fork and contribute.
 
