@@ -37,5 +37,5 @@ SCRIPT 2: batch_diarize_hdbscan.py
 
 My procedure (work in progress) yields better results than anything else I had tried at the time of this writing. Please, feel free to fork and contribute.
 
-The 22 samples used contain 1-3 speakers and UMAP and HDBSCAN parametres have been calibrated accordingly, but, in principle, this procedure should support any unknown number of speakers. Heuristics or ML may be required in order to guess the ideal parameters for each sample. 
+The 22 samples used contain 1-3 speakers and UMAP and HDBSCAN parametres have been calibrated accordingly, but, in principle, this procedure should support any unknown number of speakers. Heuristics or ML may be required in the future in order to guess the ideal parameter set for each sample (TODO). 
 
