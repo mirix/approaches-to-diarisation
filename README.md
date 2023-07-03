@@ -68,7 +68,7 @@ pyannote.audio @ git+https://github.com/pyannote/pyannote-audio@11b56a137a578db9
 nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
 ```
 
-If you use ECAPA-TDNN instead of TitaNet, you will not need NeMo and the script should work with a more recent Python
+If you use ECAPA-TDNN instead of TitaNet, you will not need NeMo and the script should also work with a more recent Python version.
 
 My procedure (work in progress) yields better results than anything else I had tried at the time of this writing. Please, feel free to fork and contribute.
 
