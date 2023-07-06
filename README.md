@@ -10,7 +10,7 @@ Sometimes it works like a charm, sometimes it is a complete disaster, or anythin
 
 This procedure (work in progress) yields much better results than anything else I had tried at the time of this writing. 
 
-Note that these are just code snippets and not an installable module or library (when going through my code keep in mind that I am chemist, not a developer).
+Note that these are just code snippets and not an installable module or library (when going through the code also keep in mind that I am chemist, not a developer).
 
 Please, feel free to fork and contribute.
 
