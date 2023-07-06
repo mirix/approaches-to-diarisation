@@ -49,7 +49,7 @@ SCRIPT 2: batch_diarize_hdbscan.py
 
 4. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
    
-5. The new script reclusters sort sentences using the clusters of long sentences as reference. This works surprisingly well (better than HDBSCAN's approximate_predict).
+5. The new script reclusters short sentences using the clusters of long sentences as reference. This works surprisingly well (better than HDBSCAN's approximate_predict).
 
 6. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
 
