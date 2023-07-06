@@ -18,7 +18,7 @@ SCRIPT 0: batch_diarize_stablets_hdbscan_novi4.py
 
 This is the only script that matters now. 
 
-It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. 
+It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. It it best to created a dedicated environment.
 
 Pyannote is no longer required.
 
