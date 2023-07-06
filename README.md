@@ -22,7 +22,7 @@ It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3.
 
 Pyannote is no longer required.
 
-It preprocess the audio but does not download anything. It expects to find the samples in mp3 format in the "samples" folder.
+It preprocesses the audio but does not download anything. It expects to find the samples in mp3 format in the "samples" folder.
 
 These are the dependencies explicitly imported:
 
