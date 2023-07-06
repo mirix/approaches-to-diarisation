@@ -6,11 +6,11 @@ I am new to the field of NLP and struggling with diarisation. I have tried a num
 
 While several of them, namely those combining Whisper with Pyannote or NeMo, yield satisfactory results when it comes to the quality of the transcription and the aligment, speaker attribution is a different matter all together. 
 
-Sometimes it works like a charm, sometimes it is a complete disaster, or anything in between. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached scripts (when going through my code keep in mind that I am chemist, not a developer).
-
-Note that these are just code snippets and not an installable module or library.
+Sometimes it works like a charm, sometimes it is a complete disaster, or anything in between. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached scripts.
 
 This procedure (work in progress) yields much better results than anything else I had tried at the time of this writing. 
+
+Note that these are just code snippets and not an installable module or library (when going through my code keep in mind that I am chemist, not a developer).
 
 Please, feel free to fork and contribute.
 
