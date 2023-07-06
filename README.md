@@ -44,7 +44,7 @@ They may pull most of the others, but perhaps not all. Check the import errors.
 
 In addition, the ffmpeg and sox libraries/executables need to be installed in your machine.
 
-This script does not require or probably will use any avaliable GPUs. You will need to hack it for that. 
+This script neither requires nor probably will use any avaliable GPUs. You will need to hack it for that. 
 
 You will need at least 8 GB of RAM and a few GB of disk space for the models. 
 
