@@ -14,6 +14,42 @@ Note that these are just code snippets and not an installable module or library 
 
 Please, feel free to fork and contribute.
 
+SCRIPT 0: batch_diarize_stablets_hdbscan_novi4.py
+
+This is the only script that matters now. 
+
+It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. 
+
+Pyannote is no longer required.
+
+It preprocess the audio but does not download anything. It expects to find the samples in mp3 format in the "samples" folder.
+
+These are the dependencies explicitly imported:
+
+```
+scipy==1.10.1
+plotly==5.15.0
+pandas==1.5.3
+numpy==1.22.4
+pydub==0.25.1
+sox==1.4.1
+umap-learn==0.5.3
+hdbscan==0.8.29
+torch==2.0.1
+stable-ts==2.6.4
+scikit-learn==1.2.2
+nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
+```
+They may pull most of the others, but perhaps not all. Check the import errors.
+
+In addition the ffmpeg and sox libraries/executables need to be installed in your machine.
+
+This script does not require or probably will use any avaliable GPUs. You will need to hack it for that. 
+
+You will need at least 8 GB of RAM and a few GB of disk space for the models. 
+
+
+### DEPRECATED CONTENT ###
 
 SCRIPT 1: batch_diarize_stablets.py
 
