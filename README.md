@@ -19,7 +19,7 @@ SCRIPT 1: batch_diarize_stablets.py
 
 0. If required, downloads the sample audio files from different sources and saves them in a folder called "diarisamples". 
 
-1. Audio pre-processing: voice isolation with [demucs](https://github.com/facebookresearch/demucs), conversion to 16-bit 16MHz WAV with ffmpeg, normalisation with [pydub](https://github.com/jiaaro/pydub), and resaving with scipy (this step is required to prevent out of range errors from [pyannote](https://github.com/pyannote/pyannote-audio) segment timestamps).
+1. Audio pre-processing: voice isolation with [demucs](https://github.com/facebookresearch/demucs), conversion to 16-bit 16MHz mono WAV with ffmpeg, normalisation with [pydub](https://github.com/jiaaro/pydub), and resaving with scipy (this step is required to prevent out of range errors from [pyannote](https://github.com/pyannote/pyannote-audio) segment timestamps).
    
 2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts).
 
