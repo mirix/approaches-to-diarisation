@@ -45,13 +45,13 @@ SCRIPT 2: batch_diarize_hdbscan.py
 
 2. Computes all-versus-all consine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
 
-3. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap).
+3. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, I have observed that HDBSCAN works better with UMAP embeddings that it does on raw data. 
 
 4. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
    
 5. The new script reclusters short sentences using the clusters of long sentences as reference. This works surprisingly well (better than HDBSCAN's approximate_predict).
 
-6. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
+6. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more (50 or as many as possible) are employed for the actual clustering.
 
 Script 2 was tested on Python 3.8.16:
 
