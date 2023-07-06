@@ -55,7 +55,7 @@ SCRIPT 2: batch_diarize_hdbscan_new.py
    
 5. The new script reclusters short sentences using the clusters of long sentences as reference. This works surprisingly well (better than HDBSCAN's approximate_predict).
 
-6. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more (50 or as many as possible) are employed for the actual clustering.
+6. Saves interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py) along with the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more (50 or as many as possible) are employed for the actual clustering.
 
 Script 2 was tested on Python 3.8.16:
 
