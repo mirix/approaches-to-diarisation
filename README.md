@@ -48,12 +48,15 @@ SCRIPT 2: batch_diarize_hdbscan.py
 3. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap).
 
 4. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
+   
+5. The new script reclusters sort sentences using the clusters of long sentences as reference. This works surprisingly well (better than HDBSCAN's approximate_predict).
 
-5. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
+6. Interactive 3D plots with [plotly](https://github.com/plotly/plotly.py) and saves the diarised SRT files. Note that even though we are using only 3 dimensions for plotting, more are employed for the actual clustering.
 
 Script 2 was tested on Python 3.8.16:
 
 ```
+scikit-learn==1.2.2
 umap-learn==0.5.3
 torch==2.0.1
 torchaudio==2.0.2
