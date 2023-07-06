@@ -42,7 +42,7 @@ nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e
 ```
 They may pull most of the others, but perhaps not all. Check the import errors.
 
-In addition the ffmpeg and sox libraries/executables need to be installed in your machine.
+In addition, the ffmpeg and sox libraries/executables need to be installed in your machine.
 
 This script does not require or probably will use any avaliable GPUs. You will need to hack it for that. 
 
