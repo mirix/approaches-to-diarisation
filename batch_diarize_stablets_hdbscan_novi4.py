@@ -10,7 +10,9 @@ import timeit
 start_time = timeit.default_timer()
 
 import os
-n_cores = '6'
+# This version is CPU-only, you will need to adapt it for GPU
+# it will used all the cores detected
+n_cores = str(os.cpu_count())
 os.environ['OMP_NUM_THREADS'] = n_cores
 os.environ['MKL_NUM_THREADS'] = n_cores
 
