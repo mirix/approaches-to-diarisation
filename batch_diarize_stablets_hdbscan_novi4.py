@@ -10,7 +10,7 @@ import logging
 logging.getLogger('sox').setLevel(logging.ERROR)
 
 import warnings
-warnings.filterwarnings("ignore")
+warnings.filterwarnings('ignore')
 
 import timeit
 start_time = timeit.default_timer()
@@ -24,6 +24,7 @@ os.environ['MKL_NUM_THREADS'] = n_cores
 
 from functools import reduce
 import shutil
+import shlex
 import re
 
 # Miscelaneus libraries install needed
@@ -35,7 +36,7 @@ import numpy as np
 
 # Audio-related libraries
 
-#import demucs.separate
+import demucs.separate
 from pydub import AudioSegment, effects  
 import sox
 
@@ -80,8 +81,8 @@ for audios in os.scandir('samples'):
 	if (audios.is_file() and audios.path.endswith(ext)):
 		print(base_name, ':', sox.file_info.duration(audios), 'seconds')
 		length.append(sox.file_info.duration(audios))
-		#demucs.separate.main(shlex.split('--two-stems vocals -n mdx_extra ' + 'samples/' + name + ' -o tmp'))
-		rawsound = AudioSegment.from_file(audios, 'mp3') 
+		demucs.separate.main(shlex.split('--two-stems vocals -n mdx_extra ' + 'samples/' + name + ' -o tmp'))
+		rawsound = AudioSegment.from_file('tmp/mdx_extra/' + base_name + '/vocals.wav', 'wav') 
 		rawsound = rawsound.set_channels(1) 
 		rawsound = rawsound.set_frame_rate(16000)
 		normalizedsound = effects.normalize(rawsound)  
@@ -96,7 +97,6 @@ dummy_list = []
 for wavs in os.scandir('diarealsamples'):
 	base_name = wavs.name[:-4]
 	if wavs.is_file() and wavs.path.endswith('.wav'):
-		#and base_name=='2023_05_19_15_27_FROM_46708040769_TO_35226032129_Tobias_Hildenbrand':
 		
 		base_name = wavs.name[:-4]
 		print(base_name)
@@ -150,7 +150,6 @@ modelsp = nemo_asr.models.EncDecSpeakerLabelModel.from_pretrained('nvidia/speake
 for wavs in os.scandir('diarealsamples'):
 	base_name = wavs.name[:-4]
 	if wavs.is_file() and wavs.path.endswith('.wav'):
-		#and base_name=='2023_05_19_15_27_FROM_46708040769_TO_35226032129_Tobias_Hildenbrand':
 	
 		print(' ')
 		print(base_name)
@@ -179,8 +178,10 @@ for wavs in os.scandir('diarealsamples'):
 			tfm.build_file('diarealsamples/' + conv_audio, 'tmp/tmp.wav')
 			try:
 				embedding = modelsp.get_embedding('tmp/tmp.wav')
+				os.remove('tmp/tmp.wav')
 				return embedding
 			except:
+				os.remove('tmp/tmp.wav')
 				return np.nan
 		
 		embeddings = df_transcript.apply(compute_embedding, axis=1)
