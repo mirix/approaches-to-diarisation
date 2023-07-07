@@ -71,4 +71,4 @@ This script neither requires nor probably will use any avaliable GPUs. You will 
 
 ### CALIBRATION ###
 
-The 40 (22 public + 18 confidential) samples employed to develop this procedure contain 1-3 speakers and UMAP and HDBSCAN parametres have been calibrated accordingly, but, in principle, it should support any undetermined number of speakers. Heuristics or ML may be required in the future in order to guess the ideal parameter set for each sample (to do). 
+The 40 (22 public + 18 confidential) samples employed to develop this procedure contain 1-3 speakers and UMAP and HDBSCAN parametres have been calibrated accordingly, but, in principle, it should support any undetermined number of speakers. Heuristics or ML may be required in the future in order to guess the ideal parameter set for each sample (ToDo). 
