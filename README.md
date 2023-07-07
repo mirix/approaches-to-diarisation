@@ -67,7 +67,7 @@ This script neither requires nor probably will use any avaliable GPUs. You will 
    
 8. Reclustering. Short sentences are sometimes misattributed so we reassign them to the nearest cluster of long sentences. This works surprisingly well (better than HDBSCAN's approximate_predict).
 
-9. Saves the diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, more (50 or as many as possible) are employed for the actual clustering.
+9. Saves the diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
 
 ### CALIBRATION ###
 
