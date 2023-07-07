@@ -187,7 +187,10 @@ for wavs in os.scandir('diarealsamples'):
 		for emb in embeddings:
 			row = []
 			for emb1 in embeddings:
-				distance = cdist(emb, emb1, metric='cosine')[0][0]
+				try:
+					distance = cdist(emb, emb1, metric='cosine')[0][0]
+				except:
+					distance = 2
 				row.append(distance)
 			dist_matrix.append(row)
 		
