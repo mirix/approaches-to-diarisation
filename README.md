@@ -16,7 +16,7 @@ Please, feel free to fork and contribute.
 
 ### REQUIREMENTS ###
 
-SCRIPT 0: batch_diarize_stablets_hdbscan_novi4.py
+#### batch_diarize_stablets_hdbscan_novi4.py ####
 
 This is the only script you need now. The others are there for just for reference.
 
