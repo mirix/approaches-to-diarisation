@@ -6,6 +6,9 @@
 
 # Generic libraries no install needed
 
+import logging
+logging.getLogger('sox').setLevel(logging.ERROR)
+
 import timeit
 start_time = timeit.default_timer()
 
@@ -90,6 +93,7 @@ dummy_list = []
 for wavs in os.scandir('diarealsamples'):
 	base_name = wavs.name[:-4]
 	if wavs.is_file() and wavs.path.endswith('.wav'):
+		#and base_name=='2023_05_19_15_27_FROM_46708040769_TO_35226032129_Tobias_Hildenbrand':
 		
 		base_name = wavs.name[:-4]
 		print(base_name)
@@ -143,6 +147,7 @@ modelsp = nemo_asr.models.EncDecSpeakerLabelModel.from_pretrained('nvidia/speake
 for wavs in os.scandir('diarealsamples'):
 	base_name = wavs.name[:-4]
 	if wavs.is_file() and wavs.path.endswith('.wav'):
+		#and base_name=='2023_05_19_15_27_FROM_46708040769_TO_35226032129_Tobias_Hildenbrand':
 	
 		print(' ')
 		print(base_name)
@@ -168,8 +173,11 @@ for wavs in os.scandir('diarealsamples'):
 			tfm.set_output_format(rate=16000, channels=1)
 			tfm.trim(row['Start'], row['End'])
 			tfm.build_file('diarealsamples/' + conv_audio, 'tmp/tmp.wav')
-			embedding = modelsp.get_embedding('tmp/tmp.wav')
-			return embedding
+			try:
+				embedding = modelsp.get_embedding('tmp/tmp.wav')
+				return embedding
+			except:
+				return np.nan
 		
 		embeddings = df_transcript.apply(compute_embedding, axis=1)
 		
