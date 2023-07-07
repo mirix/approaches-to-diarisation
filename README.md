@@ -20,7 +20,7 @@ Please, feel free to fork and contribute.
 
 This is the only script you need now. The others are there for just for reference.
 
-It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. It it best to created a dedicated environment.
+It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. It it best to create a dedicated environment.
 
 It expects to find the samples in mp3 format in the "samples" folder.
 
