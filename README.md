@@ -55,7 +55,7 @@ This script neither requires nor probably will use any avaliable GPUs. You will 
    
 2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts).
 
-3. Custom post-processing of the stable_ts output in order to have more consistent sentence splitting and creation of SRT subtitles in "diarisamples".
+3. Custom post-processing of the stable_ts output in order to have more consistent sentence splitting.
 
 4. Computes the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
 
