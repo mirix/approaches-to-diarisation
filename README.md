@@ -45,7 +45,7 @@ They may pull most of the others, but perhaps not all. Check the import errors.
 
 In addition, the ffmpeg and sox libraries/executables need to be installed in your machine.
 
-Hardware requirements: You will need at least 8 GB of RAM and a few GB of disk space for the models. 
+Hardware requirements: You will need at least 16 GB of RAM and a few GB of disk space for the models. 
 
 This script neither requires nor probably will use any avaliable GPUs. You will need to hack it if you wish to take advantage of a GPU accelerator. 
 
