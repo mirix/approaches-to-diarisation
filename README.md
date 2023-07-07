@@ -16,13 +16,13 @@ Please, feel free to fork and contribute.
 
 ### REQUIREMENTS ###
 
-#### batch_diarize_stablets_hdbscan_novi4.py ####
+#### diarize_whisper_stablets_hdbscan.py ####
 
-This is the only script you need now. The others are there for just for reference.
+This is the only script you need now.
 
-It works with Python 3.8.17. Because of NeMo, it fails on Python 3.11.3. It it best to create a dedicated environment.
+It works with Python 3.8.17. Because of NeMo, it fails with Python 3.11.3. It it best to create a dedicated environment.
 
-It expects to find the samples in mp3 format in the "samples" folder.
+It expects to find the samples in mp3 format in the "samples" folder and saves the outputs to "diarealsamples".
 
 These are the dependencies explicitly imported:
 
