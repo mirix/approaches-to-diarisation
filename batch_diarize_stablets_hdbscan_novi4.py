@@ -9,6 +9,9 @@
 import logging
 logging.getLogger('sox').setLevel(logging.ERROR)
 
+import warnings
+warnings.filterwarnings("ignore")
+
 import timeit
 start_time = timeit.default_timer()
 
@@ -170,6 +173,7 @@ for wavs in os.scandir('diarealsamples'):
 		
 		def compute_embedding(row):
 			tfm = sox.Transformer()
+			tfm.set_globals(verbosity=1)
 			tfm.set_output_format(rate=16000, channels=1)
 			tfm.trim(row['Start'], row['End'])
 			tfm.build_file('diarealsamples/' + conv_audio, 'tmp/tmp.wav')
