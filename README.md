@@ -38,6 +38,7 @@ hdbscan==0.8.29
 torch==2.0.1
 stable-ts==2.6.4
 scikit-learn==1.2.2
+demucs @ git+https://github.com/facebookresearch/demucs@5d2ccf224f595b8654b0447e06f6adc866cca61a
 nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
 ```
 They may pull most of the others, but perhaps not all. Check the import errors.
