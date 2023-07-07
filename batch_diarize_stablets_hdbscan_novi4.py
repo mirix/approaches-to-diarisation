@@ -6,11 +6,7 @@
 
 # Generic libraries no install needed
 
-import logging
-logging.getLogger('sox').setLevel(logging.ERROR)
-
-import warnings
-warnings.filterwarnings('ignore')
+from pathlib import Path
 
 import timeit
 start_time = timeit.default_timer()
@@ -79,7 +75,7 @@ for audios in os.scandir('samples'):
 	name = audios.name
 	base_name = name[:-4]
 	conv_audio = 'diarealsamples/' + base_name + '.wav'
-	if (audios.is_file() and audios.path.endswith(ext) and not conv_audio.is_file()):
+	if (audios.is_file() and audios.path.endswith(ext) and not Path(conv_audio).is_file()):
 		print(base_name, ':', sox.file_info.duration(audios), 'seconds')
 		length.append(sox.file_info.duration(audios))
 		demucs.separate.main(shlex.split('--two-stems vocals -n mdx_extra ' + 'samples/' + name + ' -o tmp'))
