@@ -61,7 +61,7 @@ This script neither requires nor probably will use any avaliable GPUs. You will 
 
 5. Computes all-versus-all cosine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
 
-6. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, I have observed that HDBSCAN works better with UMAP embeddings than it does on raw data. 
+6. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, I have observed that HDBSCAN seems to work better with UMAP embeddings than it does on raw data. 
 
 7. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
    
