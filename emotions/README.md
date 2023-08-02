@@ -10,7 +10,7 @@ The conversion from VAD into Ekman and the selection of the predominant emotion 
 
 Namely, a conversation segment rich in negatively-flagged sentences typically deserves further inspection.
 
-Each emotion paradigm has a different scope of applicability and I therefore though it would be useful to be able to translate from one into another.
+Each emotion paradigm has a different scope of applicability and I therefore though it would be useful being able to translate from one into another.
 
 This work is loosely inspired by:
 
