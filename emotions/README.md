@@ -8,4 +8,10 @@ It then attempts to translate the VAD values into [Ekman basic emotions](https:/
 
 The conversion from VAD into Ekman and the selection of the predominant emotion have not been properly calibrated yet but, in my humble opinion, the procedure already yields useful results.
 
-Namely, a conversation segment rich in negatively-flagged sentences typically deserves further inspection. 
+Namely, a conversation segment rich in negatively-flagged sentences typically deserves further inspection.
+
+Each emotion paradigm has a different scope of application and I though it would be useful to be able to translate one into another.
+
+This work is loosely inspired by:
+
+https://doi.org/10.3390/electronics10212643
