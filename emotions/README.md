@@ -12,6 +12,8 @@ Namely, a conversation segment rich in negatively-flagged sentences typically de
 
 Each emotion paradigm has a different scope of applicability and I therefore deemed useful being able to translate from one into another.
 
+Furthermore language models trained on VAD values seem to offer superior accuracy as compared to models trained on categorical frameworks. 
+
 This work is loosely inspired by:
 
 [https://doi.org/10.3390/electronics10212643](https://doi.org/10.3390/electronics10212643)
