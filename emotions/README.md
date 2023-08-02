@@ -6,7 +6,7 @@ This script (test_emotions.py) works with Python 3.11 and possibly previous vers
 
 It then attempts to translate the VAD values into [Ekman basic emotions](https://www.paulekman.com/universal-emotions/) and produces a new set of SRT files annotated with the predominant emotion.
 
-The conversion from VAD into Ekman and the selection of the predominant emotion have not been properly calibrated yet but, in my humble opinion, the procedure already yields useful results.
+The conversion from VAD into Ekman and the selection of the predominant emotion have not been properly calibrated yet but, in my humble opinion, the procedure already yields useful enough results.
 
 Namely, a conversation segment rich in negatively-flagged sentences typically deserves further inspection.
 
