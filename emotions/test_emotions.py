@@ -1,3 +1,20 @@
+# De Bruyne L, De Clercq O, Hoste V. 
+# Mixing and Matching Emotion Frameworks: 
+# Investigating Cross-Framework Transfer Learning for Dutch Emotion Detection. 
+# Electronics. 2021; 10(21):2643. 
+# https://doi.org/10.3390/electronics10212643
+
+# Mehrabian A, Russell JA. An approach to environmental psychology. the MIT Press; 1974.
+# https://en.wikipedia.org/wiki/PAD_emotional_state_model
+
+# Paul Ekman (1992) An argument for basic emotions, Cognition and Emotion, 6:3-4, 169-200, 
+# DOI: 10.1080/02699939208411068 
+
+# v / p = valence / pleasure -> The Pleasure-Displeasure Scale measures how pleasant or unpleasant one feels about something.
+# a = arousal -> The Arousal-Nonarousal Scale measures how energized or soporific one feels. It is not the intensity of the emotion.
+# d = dominance -> The Dominance-Submissiveness Scale represents the controlling and dominant versus controlled or submissive one feels. 
+
+
 import os
 # This version is CPU-only, you will need to adapt it for GPU
 # it will used all the cores detected
