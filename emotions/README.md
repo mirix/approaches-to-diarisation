@@ -1,3 +1,6 @@
+NOTE: Apparently, [according to its own creators](https://github.com/audeering/w2v2-how-to/issues/31#issuecomment-1662719286), the model was not the wisest of choices. I need to find something else.
+
+
 I have added a new script that computes sentence-wise  [VAD/PAD](https://en.wikipedia.org/wiki/PAD_emotional_state_model) values using the [audEERING model](https://huggingface.co/audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim). 
 
 It takes as inputs the WAV and SRT files produced by the diarisation script located in the upper level folder. 
