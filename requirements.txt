@@ -1,0 +1,10 @@
+scipy
+plotly
+pandas
+numpy
+pydub
+sox
+umap-learn
+hdbscan
+stable-ts
+scikit-learn
