@@ -85,7 +85,7 @@ RUN THE DIARISATION WORKFLOW
 10. Place your mp3 files in a folder called samples and run the main script
 
 ```
-python diarize_whisper_stablets_hdbscan.py.py
+python diarize_whisper_stablets_hdbscan.py
 ```
 
 
