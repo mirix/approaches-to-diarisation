@@ -2,15 +2,15 @@
 
 _A testing repo to share code and thoughts on diarisation_
 
-I am new to the field of NLP and struggling with diarisation. I have tried a number of state-of-the-art approaches. 
+I am new to the field of NLP and currently working on diarisation (and beyond). I have tried a number of state-of-the-art approaches. 
 
-While several of them, namely those combining Whisper with Pyannote or NeMo, yield satisfactory results when it comes to the quality of the transcription and the aligment, speaker attribution is a different matter all together. 
+While several of them, namely those combining Whisper with Pyannote or NeMo, typically yield satisfactory results when it comes to the quality of the transcription and the aligment, speaker attribution is a different matter all together. 
 
 Sometimes it works like a charm, sometimes it is a complete disaster, or anything in between. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached script.
 
 This procedure (work in progress) yields much better results than anything else I had tried at the time of this writing. 
 
-Note that these are just code snippets and not an installable module or library (when going through the code also keep in mind that I am chemist, not a developer). Due to the NeMo dependency, this script is proving hard to test for beginners. I will add detailed installation instructions whenever I have the time. 
+Note that these are just code snippets and not an installable module or library (when going through the code also keep in mind that I am chemist, not a developer). 
 
 Please, feel free to fork and contribute.
 
@@ -20,34 +20,15 @@ Please, feel free to fork and contribute.
 
 This is the only script you need now.
 
-It works with Python 3.8.17. Because of NeMo, it fails with Python 3.11.3. It it best to create a dedicated environment.
+It works with Python 3.8. Because of NeMo, it fails with Python 3.11 (I have not tested any versions in between).
 
-It expects to find the samples in mp3 format in the "samples" folder and saves the outputs to "diarealsamples".
+The installation instructions are now provided as a separate INSTALL file (tested and working).
 
-These are the dependencies explicitly imported:
-
-```
-scipy==1.10.1
-plotly==5.15.0
-pandas==1.5.3
-numpy==1.22.4
-pydub==0.25.1
-sox==1.4.1
-umap-learn==0.5.3
-hdbscan==0.8.29
-torch==2.0.1
-stable-ts==2.6.4
-scikit-learn==1.2.2
-demucs @ git+https://github.com/facebookresearch/demucs@5d2ccf224f595b8654b0447e06f6adc866cca61a
-nemo-toolkit @ git+https://github.com/NVIDIA/NeMo.git@c4e677a2d7aad47dbade8c3a0e47311a51d03bba
-```
-They may pull most of the others, but perhaps not all. Check the import errors.
-
-In addition, the ffmpeg and sox libraries/executables need to be installed in your machine.
+The script expects to find the samples in mp3 format in the "samples" folder and saves the outputs to "diarealsamples".
 
 Hardware requirements: You will need at least 16 GB of RAM and a few GB of disk space for the models. 
 
-This script neither requires nor probably will use any avaliable GPUs. You will need to hack it if you wish to take advantage of a GPU accelerator. 
+This script can run on the CPU and does not require a GPU accelerator. It will use it if present though (tested and working), but you will need to hack the script if you wish to take full advantage of multiple GPUs.
 
 ### WORKFLOW ###
 
