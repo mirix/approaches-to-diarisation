@@ -1,4 +1,4 @@
-CREATE VIRTUAL ENVIRONMENT
+CREATE A VIRTUAL ENVIRONMENT
 
 For instance, on Arch Linux or derivatives:
 
