@@ -25,7 +25,6 @@ python3.8 -m venv nemo
 
 ```
 source ~/Downloads/nemo/bin/activate
-
 ```
 
 For verification purposes, outside of the environment:
