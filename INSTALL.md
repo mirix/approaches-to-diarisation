@@ -106,7 +106,7 @@ cd an4
 tar xvf an4_sphere.tar.gz
 ```
 
-The exact samples used in the example are (sph is essentially wav):
+The exact samples used in the Huggingface example are the following (sph is essentially wav):
 
 ```
 ~/Downloads/an4/an4/wav/an4_clstk/fash/an255-fash-b.sph
