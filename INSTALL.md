@@ -45,7 +45,9 @@ python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=dem
 8. Install Nvidia NeMo
 
 $ sudo pacman -S libsndfile ffmpeg sox
+
 $ pip install cython
+
 $ python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
 
 9. Reinstall Pytorch (OPTINAL, only if you want a version that is different from the one pulled by NeMo):
