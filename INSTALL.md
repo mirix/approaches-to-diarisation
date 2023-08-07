@@ -35,7 +35,7 @@ python --version
 
 In my case it outputs Python 3.11.3 outside of the environment and Python 3.8.17 inside of the environment (what matters is just the major and the minor, 3.8, the patch, 17, is irrelevant)
 
-CLONE REPO AND INSTALL THE REQUIREMENTS
+CLONE THE REPO AND INSTALL THE REQUIREMENTS
 
 5. Clone this repo:
 
