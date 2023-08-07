@@ -88,23 +88,29 @@ python diarize_whisper_stablets_hdbscan.py
 
 OPTIONAL
 
-If you need WAV samples that do not need to be converted in order to test NeMo prior to testing the diarisation workflow:
+If you run into problems with NeMo, you may wish to test your installation prior to running the diarisation workflow.
+
+You can use the following code:
 
 https://huggingface.co/nvidia/speakerverification_en_titanet_large
+
+The wav samples can be obtained as follows:
 
 ```
 sudo pacman -S git-lfs
 git lfs install
+cd ~/Downloads
 git clone https://huggingface.co/datasets/espnet/an4
 cd an4
 tar xvf an4_sphere.tar.gz
 ```
 
-The samples used in the example are (sph is essentially wav):
+The exact samples used in the example are (sph is essentially wav):
 
+```
 ~/Downloads/an4/an4/wav/an4_clstk/fash/an255-fash-b.sph
 ~/Downloads/an4/an4/wav/an4_clstk/fash/cen7-fash-b.sph
-
+```
 
 
 
