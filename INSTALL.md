@@ -31,11 +31,8 @@ For verification purposes, outside of the environment:
 ```
 python --version
 ```
-Python 3.11.3
 
-Inside of the environment:
-Python 3.8.17
-(what matters is just the major and the minor, 3.8, the patch, 17, is irrelevant)
+In my case i t outputs Python 3.11.3 outside of the environment and Python 3.8.17 inside of the environment (what matters is just the major and the minor, 3.8, the patch, 17, is irrelevant)
 
 CLONE REPO AND INSTALL THE REQUIREMENTS
 
@@ -91,8 +88,7 @@ python diarize_whisper_stablets_hdbscan.py
 
 OPTIONAL
 
-If you need WAV samples that do not need to be converted in order 
-to test NeMo prior to testing the diarisation workflow:
+If you need WAV samples that do not need to be converted in order to test NeMo prior to testing the diarisation workflow:
 
 https://huggingface.co/nvidia/speakerverification_en_titanet_large
 
