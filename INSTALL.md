@@ -64,7 +64,7 @@ pip install cython
 python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
 ```
 
-9. Reinstall Pytorch (OPTINAL, only if you want a version that is different from the one pulled by NeMo):
+9. Reinstall Pytorch (OPTIONAL, only if you want a version that is different from the one pulled by NeMo):
 
 cpu (nightly):
 
