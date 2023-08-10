@@ -1,5 +1,15 @@
-NOTE: Apparently, [according to its own creators](https://github.com/audeering/w2v2-how-to/issues/31#issuecomment-1662719286), the model was not the wisest of choices. I need to find something else.
+NOTE: Apparently, [according to its own creators](https://github.com/audeering/w2v2-how-to/issues/31#issuecomment-1662719286), the model was not the wisest of choices. 
 
+To address such shortcoming, I have forked CMU MOSEI:
+
+https://github.com/mirix/messaih
+
+The fork is tailored towards Speech Emotion Recognition (SER).
+
+The idea now would be training a model on messAIh and see how it behaves on a real-life scenario.
+
+
+___
 
 I have added a new script that computes sentence-wise  [VAD/PAD](https://en.wikipedia.org/wiki/PAD_emotional_state_model) values using the [audEERING model](https://huggingface.co/audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim). 
 
