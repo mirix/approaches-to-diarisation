@@ -63,6 +63,8 @@ python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=dem
 
 ```
 sudo pacman -S libsndfile ffmpeg
+(for debian, sudo apt-get install libsndfile1 ffmpeg)
+
 pip install cython
 python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
 ```
