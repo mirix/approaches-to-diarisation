@@ -53,13 +53,16 @@ pip install -r requirements.txt
 7. Install demucs
 
 ```
+sudo pacman -S sox libid3tag libmad twolame
+(for debian, sudo apt-get install sox libsox-fmt-mp3)
+
 python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=demucs"
 ```
 
 8. Install Nvidia NeMo
 
 ```
-sudo pacman -S libsndfile ffmpeg sox
+sudo pacman -S libsndfile ffmpeg
 pip install cython
 python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
 ```
