@@ -15,9 +15,11 @@ import os
 n_cores = str(os.cpu_count())
 os.environ['OMP_NUM_THREADS'] = n_cores
 os.environ['MKL_NUM_THREADS'] = n_cores
+# Comment out the CUDA stuff if it gives you grieve
 #os.environ["NCCL_SHM_DISABLE"]="1"
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="1,0"
+#os.environ["CUDA_VISIBLE_DEVICES"]="1,0"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 from functools import reduce
 import shutil
