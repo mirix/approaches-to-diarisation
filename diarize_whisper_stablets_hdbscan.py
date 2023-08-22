@@ -6,20 +6,15 @@
 
 # Generic libraries no install needed
 
-import timeit
-start_time = timeit.default_timer()
-
 from pathlib import Path
 
 import os
 n_cores = str(os.cpu_count())
 os.environ['OMP_NUM_THREADS'] = n_cores
 os.environ['MKL_NUM_THREADS'] = n_cores
-# Comment out the CUDA stuff if it gives you grieve
 #os.environ["NCCL_SHM_DISABLE"]="1"
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-#os.environ["CUDA_VISIBLE_DEVICES"]="1,0"
-os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["CUDA_VISIBLE_DEVICES"]="1,0"
 
 from functools import reduce
 import shutil
@@ -174,7 +169,7 @@ for wavs in os.scandir('diarealsamples'):
 				embedding = modelsp.get_embedding('tmp/tmp.wav').cpu()
 				os.remove('tmp/tmp.wav')
 				return embedding
-			except:
+			except Exception:
 				os.remove('tmp/tmp.wav')
 				return np.nan
 		
@@ -188,7 +183,7 @@ for wavs in os.scandir('diarealsamples'):
 			for emb1 in embeddings:
 				try:
 					distance = cdist(emb, emb1, metric='cosine')[0][0]
-				except:
+				except Exception:
 					distance = 2
 				row.append(distance)
 			dist_matrix.append(row)
@@ -282,10 +277,14 @@ for wavs in os.scandir('diarealsamples'):
 		# and reassign the short sentences to each of those clusters
 		# by measuring the average distance
 		
-		for i in shor_seg:
-			label_matrix = df_reassign.iloc[long_seg].groupby(['Labels'], as_index=False)[i].mean()
-			new_label = int(label_matrix.loc[label_matrix[i].idxmin()]['Labels'])
-			df_umap.at[i, 'cluster_group'] = new_label
+		if len(shor_seg) >= 1:
+			for i in shor_seg:
+				try:
+					label_matrix = df_reassign.iloc[long_seg].groupby(['Labels'], as_index=False)[i].mean()
+					new_label = int(label_matrix.loc[label_matrix[i].idxmin()]['Labels'])
+					df_umap.at[i, 'cluster_group'] = new_label
+				except Exception:
+					pass
 		
 		df_umap['cluster_group'] = le.fit_transform(df_umap['cluster_group'])
 		df_umap['cluster_group'] = df_umap['cluster_group'] + 1
@@ -324,20 +323,6 @@ for wavs in os.scandir('diarealsamples'):
 				f.write(str(ind) + '\n')
 				f.write(secondsToStr(col['Start']) + ' --> ' + secondsToStr(col['End']) + '\n')
 				f.write('[SPEAKER ' + str(col['cluster_group']) + ']:' +  str(col['Text']) + '\n\n')
-
-### TIME THE SCRIPT ###
-
-time_processed = sum(length)
-print('Total audo duration: ', time_processed, 'seconds')
-
-stop_time = timeit.default_timer()
-computing_time = stop_time - start_time
-print('It took', computing_time, 'seconds.')
-
-speed = time_processed / computing_time
-print('Speed: ', speed, 'seconds per second')
-print('Processing one minute of audio takes: ', (1 / speed) * 60 , 'seconds')
-
 
 ### DELETE TEMP DIR ###
 
