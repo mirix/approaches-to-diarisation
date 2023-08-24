@@ -66,8 +66,17 @@ sudo pacman -S libsndfile ffmpeg
 (for debian, sudo apt-get install libsndfile1 ffmpeg)
 
 pip install cython
-python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
+git clone https://github.com/NVIDIA/NeMo
+cd NeMo
 ```
+Edit requirement/requirements_nlp.txt and replace "fasttext" with "fasttext-wheel" (no quotation marks), then:
+
+```
+pip install -e ".[all]"
+```
+
+(DEPRECATED) python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
+
 
 9. Reinstall Pytorch (OPTIONAL, only if you want a version that is different from the one pulled by NeMo):
 
