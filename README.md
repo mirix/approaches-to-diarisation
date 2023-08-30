@@ -34,7 +34,7 @@ This script can run on the CPU or the GPU (tested and working). You may need to 
 
 1. Audio pre-processing: voice isolation with [demucs](https://github.com/facebookresearch/demucs), plus conversion to 16-bit 16MHz mono WAV and normalisation with [pydub](https://github.com/jiaaro/pydub).
    
-2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts). I have thoroughly tested and Stable Whisper still offers superior results.
+2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts). I have thoroughly tested several approaches and Stable Whisper still offers superior results.
 
 3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are often attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having short sentences misattributed in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, purely textual models seem to perform better than VAD ones.
 
