@@ -33,7 +33,7 @@ For verification purposes:
 python --version
 ```
 
-In my case it outputs Python 3.11.3 outside of the environment and Python 3.8.17 inside of the environment (what matters is just the major and the minor, 3.8, the patch, 17, is irrelevant)
+In my case it outputs Python 3.11.3 outside of the environment and Python 3.8.18 inside of the environment (what matters is just the major and the minor, 3.8, the patch, 18, is irrelevant)
 
 CLONE THE REPO AND INSTALL THE REQUIREMENTS
 
