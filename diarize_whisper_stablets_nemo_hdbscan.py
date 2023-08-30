@@ -347,14 +347,14 @@ for wavs in os.scandir('diarealsamples'):
 			
 			### Compute the embeddings of each sentence ###
 			
-			embeddings = df_long.apply(compute_embedding, axis=1)
+			embeddings_long = df_long.apply(compute_embedding, axis=1)
 			
 			### Create am all-vs-all matrix of cosine distances between embeddings ###
 			
 			dist_matrix = []
-			for emb in embeddings:
+			for emb in embeddings_long:
 				row = []
-				for emb1 in embeddings:
+				for emb1 in embeddings_long:
 					try:
 						distance = cdist(emb, emb1, metric='cosine')[0][0]
 					except Exception:
@@ -452,13 +452,13 @@ for wavs in os.scandir('diarealsamples'):
 			if len(shor_seg) >= 1:
 				embeddings_short = df_shor.apply(compute_embedding, axis=1)
 				
-				embeddings_df = embeddings.to_frame()
+				embeddings_df = embeddings_long.to_frame()
 				embeddings_df.columns = ['embeddings']
 				embeddings_df['cluster_group'] = clustered
 				
 				emb_short_list = []
-				average0 = 100
 				for embedding in embeddings_short:
+					average0 = 2
 					for name, group in embeddings_df.groupby(['cluster_group']):
 						emb_long_list = group['embeddings'].values.tolist()
 						distance_list = []
@@ -466,12 +466,17 @@ for wavs in os.scandir('diarealsamples'):
 							distance = cdist(embedding, emb, metric='cosine')[0][0]
 							distance_list.append(distance)
 						average = sum(distance_list) / len(distance_list)
-						if average < average0:
+						print(distance_list)
+						print(average)
+						print(name[0])
+						if average <= average0:
 							average0 = average
 							cluster_name = name[0]
 					emb_short_list.append(cluster_name)
 				
 				df_shor['cluster_group'] = emb_short_list
+				
+				print(len(df_shor.index))
 				
 				df_transcript = pd.concat([df_long, df_shor], sort=False).sort_index()										
 			else:
