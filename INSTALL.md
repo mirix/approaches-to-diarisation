@@ -69,13 +69,13 @@ sudo pacman -S libsndfile ffmpeg
 ```
 pip install cython
 ```
-First try the pip way:
+First, let's try the pip way:
 
 ```
 python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[all]"
 ```
 
-Actually we only need two modules asr and nlp.
+Actually we only need two modules: asr and nlp.
 
 (OPTIONAL, ONLY IF THE PREVIOUS COMMAND FAILS)
 
