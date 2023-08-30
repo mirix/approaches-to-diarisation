@@ -466,9 +466,6 @@ for wavs in os.scandir('diarealsamples'):
 							distance = cdist(embedding, emb, metric='cosine')[0][0]
 							distance_list.append(distance)
 						average = sum(distance_list) / len(distance_list)
-						print(distance_list)
-						print(average)
-						print(name[0])
 						if average <= average0:
 							average0 = average
 							cluster_name = name[0]
