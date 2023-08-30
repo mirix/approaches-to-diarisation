@@ -123,10 +123,14 @@ for audios in os.scandir('samples'):
 
 ### TRANSCRIBE ###
 
+# Max sentence length (approx)
+max_length = 50
+# Sentences shorter than 50 words are split on the following characters
 stops = ('。', '．', '.', '！', '!', '?', '？')
-extra_stops = (', ', '，')
-abbre = ('Dr.', 'Mr.', 'Mrs.', 'Ms.', 'vs.', 'Prof.')
-max_length = 60
+# For longer sentences, the comma is also a splitting mark
+extra_stops = (',', '，')
+# The following abbreviations are excluded
+abbre = ('Dr.', 'Mr.', 'Mrs.', 'Ms.', 'vs.', 'Prof.', 'i.e.')
 
 for wavs in os.scandir('diarealsamples'):
 	base_name = wavs.name[:-4]
@@ -163,29 +167,34 @@ for wavs in os.scandir('diarealsamples'):
 				if word0.endswith(stops) and not word0.endswith(abbre):
 					chunk_list.append((word0, start0, end0))
 			else:
-				if not word0.endswith(stops) or word0.endswith(abbre):
-					word1 = word
-					start = start_list[i]
-					end = end_list[i]
-					word0 = word0 + ' ' + word1
-					start0 = start0
-					end0 = end
-					if len(word0.split()) <= max_length:
+				if len(word0.split()) <= max_length:
+					if not word0.endswith(stops) or word0.endswith(abbre):
+						word1 = word
+						word0 = word0 + ' ' + word1
+						start0 = start0
+						end0 = end_list[i]
 						if word0.endswith(stops) and not word0.endswith(abbre):
 							chunk_list.append((word0, start0, end0))
 					else:
-						if (word0.endswith(stops) or word0.endswith(extra_stops)) and (not word0.endswith(abbre)):
-							chunk_list.append((word0, start0, end0))					
-				else:
-					word0 = word
-					start0 = start_list[i]
-					end0 = end_list[i]
-					if len(word0.split()) <= max_length:
+						word0 = word
+						start0 = start_list[i]
+						end0 = end_list[i]
 						if word0.endswith(stops) and not word0.endswith(abbre):
+							chunk_list.append((word0, start0, end0))						
+				if len(word0.split()) > max_length:
+					if not word0.endswith(stops + extra_stops) or word0.endswith(abbre):
+						word1 = word
+						word0 = word0 + ' ' + word1
+						start0 = start0
+						end0 = end_list[i]
+						if word0.endswith(stops + extra_stops) and not word0.endswith(abbre):
 							chunk_list.append((word0, start0, end0))
 					else:
-						if (word0.endswith(stops) or word0.endswith(extra_stops)) and (not word0.endswith(abbre)):
-							chunk_list.append((word0, start0, end0))		
+						word0 = word
+						start0 = start_list[i]
+						end0 = end_list[i]
+						if word0.endswith(stops + extra_stops) and not word0.endswith(abbre):
+							chunk_list.append((word0, start0, end0))
 		
 		df_transcript = pd.DataFrame(chunk_list, columns = ['Text', 'Start', 'End'])
 		
@@ -213,6 +222,10 @@ for wavs in os.scandir('diarealsamples'):
 		long_seg = list(df_long.index.values)
 		shor_seg = list(df_shor.index.values)	
 		
+		# HDBSCAN dimension limit is typically 50-100
+		# we go with 50
+		
+		dimensions = 50
 		
 		#############################################################################
 		### If there are few long sentences we cluster all the sentences together ###
@@ -242,11 +255,6 @@ for wavs in os.scandir('diarealsamples'):
 			
 			df_dist = pd.DataFrame(dist_matrix)
 			df_dist = df_dist.fillna(2)
-			
-			# HDBSCAN dimension limit is typically 50-100
-			# we go with 50
-			
-			dimensions = 50
 			
 			# If the matrix has more than 50 dimensions
 			# we reduce to 50, otherwise to the 
@@ -364,11 +372,6 @@ for wavs in os.scandir('diarealsamples'):
 			
 			df_dist = pd.DataFrame(dist_matrix)
 			df_dist = df_dist.fillna(2)
-			
-			# HDBSCAN dimension limit is typically 50-100
-			# we go with 50
-			
-			dimensions = 50
 			
 			# If the matrix has more than 50 dimensions
 			# we reduce to 50, otherwise to the 
