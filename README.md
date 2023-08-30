@@ -16,7 +16,7 @@ Please, feel free to fork and contribute.
 
 ### REQUIREMENTS ###
 
-#### diarize_whisper_stablets_hdbscan.py ####
+#### diarize_whisper_stablets_nemo_hdbscan.py ####
 
 This is the only script you need now.
 
@@ -26,30 +26,30 @@ The installation instructions are now provided as a separate INSTALL file (teste
 
 The script expects to find the samples in mp3 format in the "samples" folder and saves the outputs to "diarealsamples".
 
-Hardware requirements: You will need at least 16 GB of RAM and a few GB of disk space for the models. 
+Hardware requirements: You will need at least 16 GB of RAM or VRAM and a few GB of disk space for the models. 
 
-This script can run on the CPU and does not require a GPU accelerator. It will use it if present though (tested and working), but you will need to hack the script if you wish to take full advantage of multiple GPUs.
+This script can run on the CPU or the GPU (tested and working). You may need to hack it a bit though.
 
 ### WORKFLOW ###
 
 1. Audio pre-processing: voice isolation with [demucs](https://github.com/facebookresearch/demucs), plus conversion to 16-bit 16MHz mono WAV and normalisation with [pydub](https://github.com/jiaaro/pydub).
    
-2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts).
+2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts). I have thoroughly tested and Stable Whisper still offers superior results.
 
-3. Custom post-processing of the stable_ts output in order to have more consistent sentence splitting.
+3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are often attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having short sentences misattributed in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, purely textual models seem to perform better than VAD ones.
 
-4. Computes the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
+4. Computation of the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
 
-5. Computes all-versus-all cosine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
+5. Computation of all-versus-all cosine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
 
-6. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, I have observed that HDBSCAN seems to work better with UMAP embeddings than it does on raw data. 
+6. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, we have observed that HDBSCAN seems to work better with UMAP embeddings than it does on raw data. 
 
-7. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan).
+7. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan). Only long sentences (> 5 words) are clustered.
    
-8. Reclustering. Short sentences are sometimes misattributed so we reassign them to the nearest cluster of long sentences. This works surprisingly well (better than HDBSCAN's approximate_predict).
+8. Clustering of short sentences. Short sentences are assigned to the nearest cluster of long sentences. This is not working so well at the moment. The best solution is perhaps more accurate puctuation as described above.
 
-9. Saves the diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
+9. The diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
 
 ### CALIBRATION ###
 
-The 40 (22 public + 18 confidential) samples employed to develop this procedure contain 1-3 speakers and UMAP and HDBSCAN parametres have been calibrated accordingly, but, in principle, it should support any undetermined number of speakers. Heuristics or ML may be required in the future in order to guess the ideal parameter set for each sample (ToDo). 
+The 36 samples employed to develop this procedure contain 1-3 speakers and UMAP/HDBSCAN parametres have been calibrated accordingly. In principle, this pipeline should support any undetermined number of speakers. Heuristics or ML may be required in the future in order to guess the ideal parameter set for each sample. 
