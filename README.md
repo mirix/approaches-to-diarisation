@@ -8,7 +8,7 @@ While several of them, namely those combining Whisper with Pyannote or NeMo, typ
 
 Sometimes it works like a charm, sometimes it is a complete disaster, or anything in between. I wanted to understand why. During my tribulations, I came up with the approach showcased in the attached script.
 
-This procedure (work in progress) yields much better results than anything else I had tried at the time of this writing. 
+This procedure (work in progress) yields better results than anything else I had tried at the time of this writing. 
 
 Note that these are just code snippets and not an installable module or library (when going through the code also keep in mind that I am chemist, not a developer). 
 
