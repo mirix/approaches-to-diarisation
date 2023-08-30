@@ -473,8 +473,6 @@ for wavs in os.scandir('diarealsamples'):
 				
 				df_shor['cluster_group'] = emb_short_list
 				
-				print(len(df_shor.index))
-				
 				df_transcript = pd.concat([df_long, df_shor], sort=False).sort_index()										
 			else:
 				df_transcript = df_long.copy()
