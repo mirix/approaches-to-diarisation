@@ -221,7 +221,7 @@ for wavs in os.scandir('diarealsamples'):
 		if len(df_transcript) < 2:
 			df_transcript['cluster_group'] = 1
 			
-		if len(long_seg) < 10:
+		if len(long_seg) < 10 and len(df_transcript) >= 2:
 			
 			### Compute the embeddings of each sentence ###
 			
