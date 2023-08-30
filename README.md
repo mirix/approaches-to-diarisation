@@ -36,7 +36,7 @@ This script can run on the CPU or the GPU (tested and working). You may need to 
    
 2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts). I have thoroughly tested several approaches and Stable Whisper still offers superior results.
 
-3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are often attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having short sentences misattributed in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, purely textual models seem to perform better than VAD ones.
+3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are sometimes attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having a few more short sentences misattributed in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, purely textual models seem to perform better than VAD ones.
 
 4. Computation of the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
 
@@ -46,7 +46,7 @@ This script can run on the CPU or the GPU (tested and working). You may need to 
 
 7. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan). Only long sentences (> 5 words) are clustered.
    
-8. Clustering of short sentences. Short sentences are assigned to the nearest cluster of long sentences. This is not working so well at the moment. The best solution is perhaps more accurate puctuation as described above.
+8. Clustering of short sentences. Short sentences are assigned to the nearest cluster of long sentences. This is not perfect at the moment. The best solution is perhaps more accurate puctuation as described above.
 
 9. The diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
 
