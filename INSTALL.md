@@ -63,9 +63,25 @@ python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=dem
 
 ```
 sudo pacman -S libsndfile ffmpeg
+```
 (for debian, sudo apt-get install libsndfile1 ffmpeg)
 
+```
 pip install cython
+```
+First try the pip way:
+
+```
+python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[all]"
+```
+
+Actually we only need two modules asr and nlp.
+
+(OPTIONAL, ONLY IF THE PREVIOUS COMMAND FAILS)
+
+The above fails at the time of this writing. If it still does for you, try the following hack:
+
+```
 git clone https://github.com/NVIDIA/NeMo
 cd NeMo
 ```
@@ -74,9 +90,6 @@ Edit requirement/requirements_nlp.txt and replace "fasttext" with "fasttext-whee
 ```
 pip install -e ".[all]"
 ```
-
-(DEPRECATED) python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]"
-
 
 9. Reinstall Pytorch (OPTIONAL, only if you want a version that is different from the one pulled by NeMo):
 
@@ -97,7 +110,7 @@ RUN THE DIARISATION WORKFLOW
 10. Place your mp3 files in a folder called samples and run the main script
 
 ```
-python diarize_whisper_stablets_hdbscan.py
+python diarize_whisper_stablets_nemo_hdbscan.py
 ```
 
 
