@@ -36,19 +36,21 @@ This script can run on the CPU or the GPU (tested and working). You may need to 
    
 2. Transcription and timestamp synchronisation with [Whisper](https://github.com/openai/whisper) via [stable_ts](https://github.com/jianfch/stable-ts). I have thoroughly tested several approaches and Stable Whisper still offers superior results.
 
-3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are sometimes attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having a few more short sentences misattributed in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, purely textual models seem to perform better than VAD ones.
-
-4. Computation of the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
-
-5. Computation of all-versus-all cosine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
-
-6. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, we have observed that HDBSCAN seems to work better with UMAP embeddings than it does on raw data. 
-
-7. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan). Only long sentences (> 5 words) are clustered.
+3. Repunctuation and recapitalisation with a [NeMo model](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/nlp/punctuation_and_capitalization.html). This particular model abuses the period which results in excesive splitting. Short sentences are sometimes attributed to the wrong speaker. However, this prevents utterances from different speakers from being glued together. It is a trade-off. We have preferred having a few more short sentences in order to have more accurate speaker indentification at a later stage. If you are aware of a better puctuation model, please, let us know. We have tried many. Perhaps a multimodal one combining text and voice acitivity detection (VAD) would be ideal. However, in our limited experience, purely textual models seem to perform better than purely VAD ones.
    
-8. Clustering of short sentences. Short sentences are assigned to the nearest cluster of long sentences. This is not perfect at the moment. The best solution is perhaps more accurate puctuation as described above.
+4. Sentence splitting. In a nutshell, short sentences are split in punctuation marks such as period, exclamation and interrogation marks. If, however, a sentence grows longer than 44 words it will be split on the first comma. You can set your own maximal length, but know that it will have an influence on the clustering. Drastical changes may require recalibration.
 
-9. The diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
+5. Computation of the embeddings for each segment with a [TitaNet](https://huggingface.co/nvidia/speakerverification_en_titanet_large) model. You will need [NeMo](https://github.com/NVIDIA/NeMo).
+
+6. Computation of all-versus-all cosine distance matrices from the TitaNet embeddings with scipy (this code chunk in particular is so ugly and inefficient that would make van Rossum cry).
+
+7. Dimensionality reduction of the distance matrices with [UMAP](https://github.com/lmcinnes/umap). Even in cases where dimensionality reduction is not strictly required, we have observed that HDBSCAN seems to work better with UMAP embeddings than it does on raw data. 
+
+8. Clustering of the UMAP embeddings with [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan). Only long sentences (> 5 words) are clustered.
+   
+9. Clustering of short sentences. Short sentences are assigned to the nearest cluster of long sentences. This is not perfect at the moment. The best solution is perhaps more accurate puctuation as described above.
+
+10. The diarised SRT files along with interactive 3D HTML plots procuded with [plotly](https://github.com/plotly/plotly.py). Note that even though we are using only 3 dimensions for plotting, as many as possible up to 50 are employed for the actual clustering.
 
 ### CALIBRATION ###
 
