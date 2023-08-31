@@ -94,7 +94,7 @@ def compute_embedding(row):
 	
 # Repuctuation and recapitalisation
 def repunct_recap(text):
-	repunct = {'.,': '.', ',,': ',', ',.': ',', '.,.': '.', ',?': '?', ',,,':',', '.,,': '.', ',!': '!', '..': '.', '..': '...', ' –,': '.'}
+	repunct = {'.,': '.', ',,': ',', ',.': ',', '.,.': '.', ',?': '?', ',,,':',', '.,,': '.', ',!': '!', '..': '.', '..': '...', ' –,': '.', ',–': '.'}
 	punct_text = modelpc.add_punctuation_capitalization([text])[0]
 	for key, val in repunct.items():
 		punct_text = punct_text.replace(key, val)
@@ -124,7 +124,7 @@ for audios in os.scandir('samples'):
 ### TRANSCRIBE ###
 
 # Max sentence length (approx)
-max_length = 50
+max_length = 44
 # Sentences shorter than 50 words are split on the following characters
 stops = ('。', '．', '.', '！', '!', '?', '？')
 # For longer sentences, the comma is also a splitting mark
