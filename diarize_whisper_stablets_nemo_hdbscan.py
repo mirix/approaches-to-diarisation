@@ -297,20 +297,23 @@ for wavs in os.scandir('diarealsamples'):
 				    n_components=3,
 				    random_state=31416,
 				    metric='cosine',
-				    init='random'
+				    #init='random'
 				).fit_transform(df_dist)
 			except ValueError:
-				clusterable_embedding = None
+				clusterable_embedding = df_dist
 	
 			# Another one with 50 or so for clustering
 			
-			clusterable_embedding_large = umap.UMAP(
-			    n_neighbors=n_neighbors,
-			    min_dist=.0,
-			    n_components=comp,
-			    random_state=31416,
-			    metric='cosine',
-			).fit_transform(df_dist)
+			try:
+				clusterable_embedding_large = umap.UMAP(
+				    n_neighbors=n_neighbors,
+				    min_dist=.0,
+				    n_components=comp,
+				    random_state=31416,
+				    metric='cosine',
+				).fit_transform(df_dist)
+			except ValueError:
+				clusterable_embedding_large = df_dist
 			
 			# We define the clustering algorithm and cluster
 			
@@ -414,20 +417,23 @@ for wavs in os.scandir('diarealsamples'):
 				    n_components=3,
 				    random_state=31416,
 				    metric='cosine',
-				    init='random'
+				    #init='random'
 				).fit_transform(df_dist)
 			except ValueError:
-				clusterable_embedding = None
+				clusterable_embedding = df_dist
 	
 			# Another one with 50 or so for clustering
 			
-			clusterable_embedding_large = umap.UMAP(
-			    n_neighbors=n_neighbors,
-			    min_dist=.0,
-			    n_components=comp,
-			    random_state=31416,
-			    metric='cosine',
-			).fit_transform(df_dist)
+			try:
+				clusterable_embedding_large = umap.UMAP(
+				    n_neighbors=n_neighbors,
+				    min_dist=.0,
+				    n_components=comp,
+				    random_state=31416,
+				    metric='cosine',
+				).fit_transform(df_dist)
+			except ValueError:
+				clusterable_embedding_large = df_dist
 			
 			# We define the clustering algorithm and cluster
 			
