@@ -299,7 +299,7 @@ for wavs in os.scandir('diarealsamples'):
 				    metric='cosine',
 				    #init='random'
 				).fit_transform(df_dist)
-			except ValueError:
+			except Exception:
 				clusterable_embedding = df_dist
 	
 			# Another one with 50 or so for clustering
@@ -312,7 +312,7 @@ for wavs in os.scandir('diarealsamples'):
 				    random_state=31416,
 				    metric='cosine',
 				).fit_transform(df_dist)
-			except ValueError:
+			except Exception:
 				clusterable_embedding_large = df_dist
 			
 			# We define the clustering algorithm and cluster
@@ -419,7 +419,7 @@ for wavs in os.scandir('diarealsamples'):
 				    metric='cosine',
 				    #init='random'
 				).fit_transform(df_dist)
-			except ValueError:
+			except Exception:
 				clusterable_embedding = df_dist
 	
 			# Another one with 50 or so for clustering
@@ -432,7 +432,7 @@ for wavs in os.scandir('diarealsamples'):
 				    random_state=31416,
 				    metric='cosine',
 				).fit_transform(df_dist)
-			except ValueError:
+			except Exception:
 				clusterable_embedding_large = df_dist
 			
 			# We define the clustering algorithm and cluster
