@@ -18,7 +18,7 @@ yay python310
 
 ```
 cd ~/Downloads
-python3.8 -m venv nemo10
+python3.10 -m venv nemo10
 ```
 
 4. Activate the new environment:
