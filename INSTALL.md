@@ -85,7 +85,7 @@ python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_tool
 
 NOTE: Actually we only need two modules: asr and nlp.
 
-(OPTIONAL, ONLY IF THE PREVIOUS COMMAND FAILS)
+[OPTIONAL, ONLY IF THE PREVIOUS COMMAND FAILS]
 
 The above fails from a venv at the time of this writing. If it still does for you, try the following hack:
 
@@ -99,7 +99,7 @@ Edit requirement/requirements_nlp.txt and replace "fasttext" with "fasttext-whee
 pip install -e ".[all]"
 ```
 
-10. Reinstall Pytorch:
+10. Reinstall [Pytorch](https://pytorch.org/get-started/locally/):
 
 gpu (stable with CUDA 11.8):
 
