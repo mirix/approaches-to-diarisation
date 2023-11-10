@@ -63,7 +63,9 @@ python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=dem
 
 8. Install RAPIDS (only the required modules)
 
+```
 pip install --extra-index-url=https://pypi.nvidia.com cudf-cu12 cuml-cu12
+```
 
 NOTE: This is only required to run the RAPIDS script, omit this step if you are running the CPU-only script.
 
