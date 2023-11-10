@@ -8,23 +8,23 @@ For instance, on Arch Linux or derivatives:
 sudo pacman -S yay
 ```
 
-2. Install Python 3.8:
+2. Install Python 3.10:
 
 ```
-yay python38
+yay python310
 ```
 
 3. Create a virtual environment with Python 3.8 (I called it nemo):
 
 ```
 cd ~/Downloads
-python3.8 -m venv nemo
+python3.8 -m venv nemo10
 ```
 
 4. Activate the new environment:
 
 ```
-source ~/Downloads/nemo/bin/activate
+source ~/Downloads/nemo10/bin/activate
 ```
 
 For verification purposes:
@@ -33,7 +33,7 @@ For verification purposes:
 python --version
 ```
 
-In my case it outputs Python 3.11.3 outside of the environment and Python 3.8.18 inside of the environment (what matters is just the major and the minor, 3.8, the patch, 18, is irrelevant)
+In my case it outputs Python 3.11.5 outside of the environment and Python 3.10.13 inside of the environment (what matters is just the major and the minor, 3.10, the patch, 13, is irrelevant)
 
 CLONE THE REPO AND INSTALL THE REQUIREMENTS
 
@@ -50,6 +50,8 @@ cd approaches-to-diarisation
 pip install -r requirements.txt
 ```
 
+NOTE: If you are using the RAPIDS version you can delete the lines reading hdbscan and umap-learn. These are only required for the, now deprecated, CPU version.
+
 7. Install demucs
 
 ```
@@ -59,7 +61,13 @@ sudo pacman -S sox libid3tag libmad twolame
 python -m pip install -U "git+https://github.com/facebookresearch/demucs#egg=demucs"
 ```
 
-8. Install Nvidia NeMo
+8. Install RAPIDS (only the required modules)
+
+pip install --extra-index-url=https://pypi.nvidia.com cudf-cu12 cuml-cu12
+
+NOTE: This is only required to run the RAPIDS script, omit this step if you are running the CPU-only script.
+
+9. Install Nvidia NeMo
 
 ```
 sudo pacman -S libsndfile ffmpeg
@@ -75,11 +83,11 @@ First, let's try the pip way:
 python -m pip install "git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[all]"
 ```
 
-Actually we only need two modules: asr and nlp.
+NOTE: Actually we only need two modules: asr and nlp.
 
 (OPTIONAL, ONLY IF THE PREVIOUS COMMAND FAILS)
 
-The above fails at the time of this writing. If it still does for you, try the following hack:
+The above fails from a venv at the time of this writing. If it still does for you, try the following hack:
 
 ```
 git clone https://github.com/NVIDIA/NeMo
@@ -91,30 +99,29 @@ Edit requirement/requirements_nlp.txt and replace "fasttext" with "fasttext-whee
 pip install -e ".[all]"
 ```
 
-9. Reinstall Pytorch (OPTIONAL, only if you want a version that is different from the one pulled by NeMo):
+10. Reinstall Pytorch:
 
-cpu (nightly):
-
-```
-pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
-```
-
-gpu (nightly for CUDA 12.1):
+gpu (stable with CUDA 11.8):
 
 ```
-pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+NOTE: In a CPU-only environment:
+
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
 
 RUN THE DIARISATION WORKFLOW
 
-10. Place your mp3 files in a folder called samples and run the main script
+11. Place your mp3 files in a folder called samples and run the main script
 
 ```
-python diarize_whisper_stablets_nemo_hdbscan.py
+python diarize_whisper_stablets_nemo_hdbscan_rapids.py
 ```
 
 
-OPTIONAL
+TROUBLESHOOTING
 
 If you run into problems with NeMo, you may wish to test your installation prior to running the diarisation workflow.
 
