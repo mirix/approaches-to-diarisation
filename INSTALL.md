@@ -14,7 +14,7 @@ sudo pacman -S yay
 yay python310
 ```
 
-3. Create a virtual environment with Python 3.8 (I called it nemo):
+3. Create a virtual environment with Python 3.10 (I called it nemo10):
 
 ```
 cd ~/Downloads
