@@ -16,11 +16,13 @@ Please, feel free to fork and contribute.
 
 ### REQUIREMENTS ###
 
-#### diarize_whisper_stablets_nemo_hdbscan.py ####
+#### diarize_whisper_stablets_nemo_hdbscan_rapids.py ####
 
-This is the only script you need now.
+This is the only script you need now. It requires Python 3.10.
 
-It works with Python 3.8. Because of NeMo, it fails with Python 3.11 (I have not tested any versions in between).
+At the time of this writing NeMo installation fails with Python 3.11.
+
+It has been updated to use Whisper 3 (via stable-ts, see below).
 
 The installation instructions are now provided as a separate INSTALL file (tested and working).
 
@@ -28,7 +30,11 @@ The script expects to find the samples in mp3 format in the "samples" folder and
 
 Hardware requirements: You will need at least 16 GB of RAM or VRAM and a few GB of disk space for the models. 
 
-This script can run on the CPU or the GPU (tested and working). It may need a bit of hacking though.
+This script is GPU-only as now the UMAP and HDBSCAN algorithms are invoked from [RAPIDS](https://docs.rapids.ai/install#selector). 
+
+For convenience, an unmaintained non-RAPIDS script is kept in the repository. This code requires only minor changes to be run on a CPU-only environment.
+
+Keep in mind, however, that the standard [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan) implementation is not parallelised and therefore, it becomes the bottleneck of the pipeline. The RAPIDS version, on the other hand, is extremely fast.
 
 ### WORKFLOW ###
 
