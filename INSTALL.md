@@ -73,10 +73,8 @@ NOTE: This is only required to run the RAPIDS script, omit this step if you are 
 
 ```
 sudo pacman -S libsndfile ffmpeg
-```
 (for debian, sudo apt-get install libsndfile1 ffmpeg)
 
-```
 pip install cython
 ```
 First, let's try the pip way:
