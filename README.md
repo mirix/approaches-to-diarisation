@@ -34,7 +34,7 @@ This script is GPU-only as now the UMAP and HDBSCAN algorithms are invoked from 
 
 For convenience, an unmaintained non-RAPIDS script is kept in the repository. This code requires only minor changes to be run on a CPU-only environment.
 
-Keep in mind, however, that the standard [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan) implementation is not parallelised and therefore, it becomes the bottleneck of the pipeline. The RAPIDS version, on the other hand, is extremely fast.
+Keep in mind, however, that the standard [HDBSCAN](https://github.com/scikit-learn-contrib/hdbscan) implementation is not parallelised and, therefore, it becomes the bottleneck of the pipeline. The RAPIDS version, on the other hand, is extremely fast.
 
 ### WORKFLOW ###
 
